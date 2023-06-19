@@ -6,23 +6,32 @@
 </head>
 <body>
     <header>
-        <button class="button">
-            <img class="icon" src="./assets/icons/bars.svg"/></button>
-        <div class="logo">
-            <img class="icon icon--background-white" src="./assets/icons/logo.svg" />
+        <div class="header">
+            <button class="button toggler">
+                <img class="icon" src="./assets/icons/bars.svg"/></button>
+            <div class="logo">
+                <img class="icon icon--background-white" src="./assets/icons/logo.svg" />
+                <div>
+                    <p class="text text--paragraph-2">HOTEL</p>
+                    <p class="text text--paragraph-1">MIRANDA</p>
+                </div>
+            </div>
             <div>
-                <p class="text text--paragraph-2">HOTEL</p>
-                <p class="text text--paragraph-1">MIRANDA</p>
+                <button class="button">
+                    <img class="icon"  src="./assets/icons/user.svg" />
+                </button>
+                <button class="button">
+                    <img class="icon"  src="./assets/icons/search.svg" />
+                </button>
             </div>
         </div>
-        <div>
-            <button class="button">
-                <img class="icon"  src="./assets/icons/user.svg" />
-            </button>
-            <button class="button">
-                <img class="icon"  src="./assets/icons/search.svg" />
-            </button>
+        <div class="menu hidden">
+            <a class="text text--paragraph-2">About Us</a>
+            <a class="text text--paragraph-2">Rooms</a>
+            <a class="text text--paragraph-2">Offers</a>
+            <a class="text text--paragraph-2">Contact</a>
         </div>
+        <script src="./js/menu-toggler.js"></script>
     </header>
 
     <section>
