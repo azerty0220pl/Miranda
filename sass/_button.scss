@@ -1,0 +1,13 @@
+.button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+
+    &--variant-gold {
+        background-color: $color-gold;
+    }
+
+    &--variant-outlined {
+        border: 2px solid $color-gold;
+    }
+}
