@@ -3,6 +3,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    background-color: $color-white;
 
     .header {
         display: flex;
@@ -13,8 +14,7 @@ header {
     .menu {
         display: flex;
         flex-direction: column;
-        margin-left: $margin-1;
+        padding: $margin-1;
         gap: 0.5rem;
-        background-color: $color-white;
     }
 }

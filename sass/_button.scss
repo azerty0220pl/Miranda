@@ -11,6 +11,11 @@
         border: 2px solid $color-gold;
     }
 
+    &--size-big {
+        width: 14rem;
+        padding: 1rem;
+    }
+
     &:hover{
         cursor: pointer;
     }
