@@ -4,6 +4,7 @@ header {
     left: 0;
     width: 100%;
     background-color: $color-white;
+    z-index: 20;
 
     .header {
         display: flex;
