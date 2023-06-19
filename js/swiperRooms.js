@@ -1,7 +1,7 @@
-import Swiper from 'swiper';
+import Swiper from '../node_modules/swiper/swiper';
 import 'swiper/css';
 
-const swiper = new s.Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
