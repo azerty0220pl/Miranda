@@ -162,4 +162,49 @@ header .menu {
   gap: 1rem;
 }
 
+.availability {
+  background-color: #222;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.availability form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.availability form input[type=date] {
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 2px solid #BEAD8E;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+}
+.availability form input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 15px;
+  background-image: url("../assets/icons/calendar.svg");
+}
+.availability form input[type=date]::-webkit-calendar-picker-indicator:hover {
+  cursor: pointer;
+}
+.availability form input[type=date]::-webkit-datetime-edit-fields-wrapper {
+  position: relative;
+  left: 10px;
+}
+.availability form input[type=date]::-webkit-datetime-edit-fields-wrapper:hover {
+  cursor: text;
+}
+.availability form input[type=date]::-webkit-datetime-edit {
+  position: relative;
+  left: 10px;
+}
+.availability form input[type=date]::-webkit-datetime-edit:hover {
+  cursor: text;
+}
+.availability form input[type=date]:focus {
+  outline: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
