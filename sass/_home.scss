@@ -1,17 +1,10 @@
 .home {
-    padding: $margin-1;
-    padding-top: calc(3.25rem + $margin-4);
-    padding-bottom: $margin-4;
+    padding-top: calc(3.25rem + $margin-4) !important;
+    padding-bottom: $margin-4 !important;
 
     display: flex;
     flex-direction: column;
-    gap: $margin-2;
+    gap: 2rem;
 
     background-color: $color-grey-4;
-
-    div {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
 }

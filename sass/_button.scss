@@ -1,19 +1,23 @@
 .button {
+    @extend .text, .text--button;
     background-color: transparent;
     border: none;
     border-radius: 0;
-
-    &--variant-gold {
-        background-color: $color-gold;
-    }
-
-    &--variant-outlined {
-        border: 2px solid $color-gold;
-    }
+    margin-top: 1.5rem;
 
     &--size-big {
         width: 15rem;
         padding: 1rem;
+    }
+
+    &--variant-gold {
+        @extend .button--size-big;
+        background-color: $color-gold;
+    }
+
+    &--variant-outlined {
+        @extend .button--size-big;
+        border: 2px solid $color-gold;
     }
 
     &:hover{
