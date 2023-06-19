@@ -104,9 +104,9 @@ section, footer {
   background-color: transparent;
   border: none;
   border-radius: 0;
-  margin-top: 1.5rem;
 }
 .button--size-big, .button--variant-outlined, .button--variant-gold {
+  margin-top: 1.5rem;
   width: 15rem;
   padding: 1rem;
 }
@@ -155,6 +155,17 @@ header .menu {
 }
 .icon--background-white {
   background-color: white;
+}
+.icon--variant-big {
+  width: 30%;
+  height: auto;
+  z-index: 10;
+}
+.icon--variant-background {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  z-index: 0;
 }
 
 .hidden {
@@ -217,6 +228,48 @@ header .menu {
 .about {
   background-color: #F8F8F8;
   padding-bottom: 12rem;
+}
+
+.card {
+  margin: auto;
+  width: 75%;
+  max-width: 30rem;
+  aspect-ratio: 9/20;
+}
+.card .full {
+  height: 50%;
+}
+.card .full img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .content {
+  height: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+}
+.card .content .text--paragraph-1 {
+  width: 75%;
+}
+.card .content .icon--variant-background {
+  top: 10%;
+  right: 0;
+}
+.card--margin-negative {
+  margin-top: -12rem;
+  margin-bottom: 2rem;
+}
+.card--shadow {
+  box-shadow: 0px 8px 16px rgba(34, 34, 34, 0.02);
+}
+.card--black {
+  background-color: #222;
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
