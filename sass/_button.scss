@@ -10,4 +10,8 @@
     &--variant-outlined {
         border: 2px solid $color-gold;
     }
+
+    &:hover{
+        cursor: pointer;
+    }
 }

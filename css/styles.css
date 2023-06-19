@@ -86,11 +86,27 @@ body {
 .button--variant-outlined {
   border: 2px solid #BEAD8E;
 }
+.button:hover {
+  cursor: pointer;
+}
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header .header {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+}
+header .menu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  gap: 0.5rem;
+  background-color: white;
 }
 
 .logo div {
@@ -103,10 +119,16 @@ header {
 .icon {
   padding: 0.5rem;
   padding: 0.5rem;
+  width: 2rem;
+  height: 2rem;
   background-color: transparent;
 }
 .icon--background-white {
   background-color: white;
+}
+
+.hidden {
+  display: none !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
