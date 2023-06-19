@@ -17,3 +17,23 @@
 @mixin font-3 {
     font-family: 'Oswald', 'Archivo', 'Roboto';
 }
+
+@mixin font-size-1 {
+    font-size: 14;
+}
+
+@mixin font-size-2 {
+    font-size: 16;
+}
+
+@mixin font-size-3 {
+    font-size: 24;
+}
+
+@mixin font-size-4 {
+    font-size: 32;
+}
+
+@mixin font-size-5 {
+    font-size: 56;
+}
