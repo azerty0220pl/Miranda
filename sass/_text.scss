@@ -1,36 +1,53 @@
 .text {
     color: $color-grey-5;
+    margin: 0;
 
     &--title-1 {
-        @apply font-1 weight-1 font-size-5;
+        @include font-1;
+        @include weight-1;
+        @include font-size-5;
     }
 
     &--title-2 {
-        @apply font-1 weight-1 font-size-4;
+        @include font-1;
+        @include weight-1;
+        @include font-size-4;
     }
     
     &--title-3 {
-        @apply font-1 weight-1 font-size-3;
+        @include font-1;
+        @include weight-1;
+        @include font-size-3;
     }
 
     &--price-1 {
-        @apply font-2 weight-2 font-size-4;
+        @include font-2;
+        @include weight-2;
+        @include font-size-4;
     }
 
     &--price-2 {
-        @apply font-2 weight-2 font-size-3;
+        @include font-2;
+        @include weight-2;
+        @include font-size-3;
     }
 
     &--paragraph-1 {
-        @apply font-2 weight-1 font-size-2;
+        @include font-2;
+        @include weight-1;
+        @include font-size-2;
     }
 
     &--paragraph-2 {
-        @apply font-2 weight-2 font-size-2;
+        @include font-2;
+        @include weight-2;
+        @include font-size-2;
     }
 
     &--pagination {
-        @apply font-3 weight-2 font-size-2;
+        @include font-3;
+        @include weight-2;
+        @include font-size-2;
     }
 
     &--color-1 {
