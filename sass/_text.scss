@@ -1,0 +1,35 @@
+.text {
+    color: $color-grey-5;
+
+    &--title-1 {
+        @use font-1 weight-1 font-size-5;
+    }
+
+    &--title-2 {
+        @use font-1 weight-1 font-size-4;
+    }
+    
+    &--title-3 {
+        @use font-1 weight-1 font-size-3;
+    }
+
+    &--price-1 {
+        @use font-2 weight-2 font-size-4;
+    }
+
+    &--price-2 {
+        @use font-2 weight-2 font-size-3;
+    }
+
+    &--paragraph-1 {
+        @use font-2 weight-1 font-size-2;
+    }
+
+    &--paragraph-2 {
+        @use font-2 weight-2 font-size-2;
+    }
+
+    &--pagination {
+        @use font-3 weight-2 font-size-2;
+    }
+}
