@@ -1,8 +1,6 @@
-import Swiper from '../node_modules/swiper/swiper';
-import 'swiper/css';
+import Swiper from '../node_modules/swiper/swiper-bundle';
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     direction: 'horizontal',
     loop: true,
 
@@ -12,7 +10,6 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev'
     },
 
-    // And if we need scrollbar
     scrollbar: {
         el: '.swiper-scrollbar'
     }
