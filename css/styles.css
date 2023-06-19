@@ -1,0 +1,50 @@
+.text {
+  color: #222;
+}
+.text--title-1 {
+  @apply font-1 weight-1 font-size-5;
+}
+.text--title-2 {
+  @apply font-1 weight-1 font-size-4;
+}
+.text--title-3 {
+  @apply font-1 weight-1 font-size-3;
+}
+.text--price-1 {
+  @apply font-2 weight-2 font-size-4;
+}
+.text--price-2 {
+  @apply font-2 weight-2 font-size-3;
+}
+.text--paragraph-1 {
+  @apply font-2 weight-1 font-size-2;
+}
+.text--paragraph-2 {
+  @apply font-2 weight-2 font-size-2;
+}
+.text--pagination {
+  @apply font-3 weight-2 font-size-2;
+}
+.text--color-1 {
+  color: white;
+}
+.text--color-2 {
+  color: #C2C2C2;
+}
+.text--color-3 {
+  color: #777;
+}
+.text--color-4 {
+  color: #333;
+}
+.text--color-5 {
+  color: #BEAD8E;
+}
+.text--align-center {
+  text-align: center;
+}
+.text--align-end {
+  text-align: end;
+}
+
+/*# sourceMappingURL=styles.css.map */
