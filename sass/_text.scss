@@ -35,13 +35,13 @@
     &--paragraph-1 {
         @include font-2;
         @include weight-1;
-        @include font-size-2;
+        @include font-size-1;
     }
 
     &--paragraph-2 {
         @include font-2;
         @include weight-2;
-        @include font-size-2;
+        @include font-size-1;
     }
 
     &--pagination {
@@ -76,5 +76,17 @@
 
     &--align-end {
         text-align: end;
+    }
+    
+    &--spaced {
+        letter-spacing: 2.8px;
+    }
+
+    &--button {
+        @extend .text--color-1, .text--align-center, .text--spaced, .text--paragraph-2;
+    }
+
+    &--title-up {
+        @extend .text--paragraph-2, .text--spaced;
     }
 }

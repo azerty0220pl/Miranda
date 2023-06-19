@@ -53,19 +53,19 @@ body {
 .text--paragraph-1 {
   font-family: "Archivo";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
-.text--paragraph-2 {
+.text--paragraph-2, .text--title-up, .text--button {
   font-family: "Archivo";
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
 }
 .text--pagination {
   font-family: "Oswald";
   font-weight: 700;
   font-size: 16px;
 }
-.text--color-1 {
+.text--color-1, .text--button {
   color: white;
 }
 .text--color-2 {
@@ -80,13 +80,15 @@ body {
 .text--color-5 {
   color: #BEAD8E;
 }
-.text--align-center {
+.text--align-center, .text--button {
   text-align: center;
 }
 .text--align-end {
   text-align: end;
 }
-
+.text--spaced, .text--title-up, .text--button {
+  letter-spacing: 2.8px;
+}
 .button {
   background-color: transparent;
   border: none;
@@ -99,7 +101,7 @@ body {
   border: 2px solid #BEAD8E;
 }
 .button--size-big {
-  width: 14rem;
+  width: 15rem;
   padding: 1rem;
 }
 .button:hover {
