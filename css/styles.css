@@ -46,6 +46,7 @@ section .no-margin, footer .no-margin {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 32px;
+  margin-top: 1.5rem;
   letter-spacing: -1.5px;
 }
 .text--title-3 {
