@@ -1,5 +1,7 @@
 .card {
     margin: auto;
+    display: flex;
+    flex-direction: column;
 
     @mixin image {
         height: 50%;
@@ -120,5 +122,9 @@
             max-width: 100%;
             aspect-ratio: 16/9;
         }
+    }
+
+    &--center {
+        align-items: center;
     }
 }
