@@ -20,7 +20,11 @@
     right: 0 !important;
 }
 
-.rooms-swiper {
+.swiper-pagination-bullet-active {
+    background-color: $color-gold !important;
+}
+
+.swiper {
     position: relative;
     overflow: hidden;
 }

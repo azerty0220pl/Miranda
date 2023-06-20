@@ -393,7 +393,11 @@ header .menu {
   cursor: pointer;
 }
 
-.rooms-swiper {
+.swiper-pagination-bullet-active {
+  background-color: #BEAD8E !important;
+}
+
+.swiper {
   position: relative;
   overflow: hidden;
 }
