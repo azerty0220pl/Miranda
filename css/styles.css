@@ -29,7 +29,7 @@ section .no-margin, footer .no-margin {
   margin-right: -1rem;
 }
 
-.text, .button {
+.text, .button--size-big, .button--variant-outlined, .button--variant-gold {
   color: #222;
   margin: 0;
   width: 100%;
@@ -75,7 +75,7 @@ section .no-margin, footer .no-margin {
   font-weight: 400;
   font-size: 14px;
 }
-.text--paragraph-2, .text--background, .text--title-up, .text--button, .button {
+.text--paragraph-2, .text--background, .text--title-up, .text--button, .button--size-big, .button--variant-outlined, .button--variant-gold {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 14px;
@@ -85,7 +85,7 @@ section .no-margin, footer .no-margin {
   font-weight: 700;
   font-size: 16px;
 }
-.text--color-1, .text--button, .button {
+.text--color-1, .text--button, .button--size-big, .button--variant-outlined, .button--variant-gold {
   color: white;
 }
 .text--color-2 {
@@ -100,13 +100,13 @@ section .no-margin, footer .no-margin {
 .text--color-5 {
   color: #BEAD8E;
 }
-.text--align-center, .text--button, .button {
+.text--align-center, .text--button, .button--size-big, .button--variant-outlined, .button--variant-gold {
   text-align: center;
 }
 .text--align-end {
   text-align: end;
 }
-.text--spaced, .text--title-up, .text--button, .button {
+.text--spaced, .text--title-up, .text--button, .button--size-big, .button--variant-outlined, .button--variant-gold {
   letter-spacing: 2.8px;
 }
 .text--background {
@@ -254,6 +254,13 @@ header .menu {
 .card {
   margin: auto;
 }
+.card .lonely {
+  margin: 1rem;
+}
+.card .lonely img {
+  aspect-ratio: 1;
+  width: 100%;
+}
 .card .content {
   height: 50%;
   position: relative;
@@ -269,6 +276,30 @@ header .menu {
 .card .content .icon--variant-background {
   top: 10%;
   right: 0;
+}
+.card .content .entry {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+.card .content .entry .text--paragraph-1 {
+  width: 100%;
+}
+.card .content .entry .img {
+  aspect-ratio: 1;
+  width: 60%;
+  max-width: 6rem;
+}
+.card .content .entry .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card .content .entry .data {
+  margin-left: 1rem;
+}
+.card .content .entry:last-of-type {
+  margin-bottom: 4rem;
 }
 .card .content--negative-margin {
   height: auto;
@@ -370,10 +401,10 @@ header .menu {
 }
 
 .swiper-button-prev {
-  top: 28.125vw !important;
   width: 3rem !important;
   height: 3rem !important;
   padding: 1rem !important;
+  top: 28.125vw !important;
   left: 0 !important;
 }
 .swiper-button-prev:hover {
@@ -382,13 +413,41 @@ header .menu {
 }
 
 .swiper-button-next {
+  width: 3rem !important;
+  height: 3rem !important;
+  padding: 1rem !important;
   top: 28.125vw !important;
+  right: 0 !important;
+}
+.swiper-button-next:hover {
+  background-color: #BEAD8E;
+  cursor: pointer;
+}
+
+.swiper-button-next-alt {
+  position: absolute;
+  z-index: 10;
+  bottom: 0 !important;
   width: 3rem !important;
   height: 3rem !important;
   padding: 1rem !important;
   right: 0 !important;
 }
-.swiper-button-next:hover {
+.swiper-button-next-alt:hover {
+  background-color: #BEAD8E;
+  cursor: pointer;
+}
+
+.swiper-button-prev-alt {
+  position: absolute;
+  z-index: 10;
+  bottom: 0 !important;
+  width: 3rem !important;
+  height: 3rem !important;
+  padding: 1rem !important;
+  right: 4rem !important;
+}
+.swiper-button-prev-alt:hover {
   background-color: #BEAD8E;
   cursor: pointer;
 }
@@ -397,9 +456,8 @@ header .menu {
   background-color: #BEAD8E !important;
 }
 
-.swiper {
-  position: relative;
-  overflow: hidden;
+.swiper-pagination {
+  position: relative !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

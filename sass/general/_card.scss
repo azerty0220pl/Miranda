@@ -11,6 +11,15 @@
         }
     }
 
+    .lonely {
+        margin: 1rem;
+
+        img {
+            aspect-ratio: 1;
+            width: 100%;
+        }
+    }
+
     .content {
         height: 50%;
         position: relative;
@@ -29,6 +38,36 @@
             right: 0;
         }
 
+        .entry {
+            margin: 1rem;
+            display: flex;
+            align-items: center;
+
+            .text--paragraph-1 {
+                width: 100%;
+            }
+
+            .img {
+                aspect-ratio: 1;
+                width: 60%;
+                max-width: 6rem;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .data {
+                margin-left: 1rem;
+            }
+
+            &:last-of-type {
+                margin-bottom: 4rem;
+            }
+        }
+
         &--negative-margin {
             height: auto;
             padding: 1rem 0;
@@ -40,7 +79,7 @@
 
         &--align-left {
             display: block;
-            margin: $margin-2; 
+            margin: $margin-2;
             margin-top: $margin-3;
 
             p {

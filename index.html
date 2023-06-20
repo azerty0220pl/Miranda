@@ -283,9 +283,143 @@
     </section>
 
     <section>
+        <p class="text text--title-up text--color-3">MENU</p>
+        <p class="text text--title-1">Our Foods Menu</p>
+        <div class="swiper food-swiper no-margin">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card card--wide">
+                    <div class="content">
+                        <div class="entry">
+                            <div class="img">
+                                <img src="./assets/empty.png" />
+                            </div>
+                            <div class="data">
+                                <p class="text text--title-3">Eggs & Bacon</p>
+                                <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
+                                    isicing elit, sed do eiusmod tempor. </p>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="img">
+                                <img src="./assets/empty.png" />
+                            </div>
+                            <div class="data">
+                                <p class="text text--title-3">Tea or Coffee</p>
+                                <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
+                                    isicing elit, sed do eiusmod tempor. </p>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="img">
+                                <img src="./assets/empty.png" />
+                            </div>
+                            <div class="data">
+                                <p class="text text--title-3">Chia Oatmeal</p>
+                                <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
+                                    isicing elit, sed do eiusmod tempor. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card card--wide">
+                    <div class="content">
+                        <div class="entry">
+                            <div class="img">
+                                <img src="./assets/empty.png" />
+                            </div>
+                            <div class="data">
+                                <p class="text text--title-3">Bacon & Eggs</p>
+                                <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
+                                    isicing elit, sed do eiusmod tempor. </p>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="img">
+                                <img src="./assets/empty.png" />
+                            </div>
+                            <div class="data">
+                                <p class="text text--title-3">Coffee or Tea</p>
+                                <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
+                                    isicing elit, sed do eiusmod tempor. </p>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="img">
+                                <img src="./assets/empty.png" />
+                            </div>
+                            <div class="data">
+                                <p class="text text--title-3">Oatmeal Chia</p>
+                                <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
+                                    isicing elit, sed do eiusmod tempor. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img class="icon icon--background-white swiper-button-prev-alt" src="./assets/icons/arrow-left.svg" />
+            <img class="icon icon--background-white swiper-button-next-alt" src="./assets/icons/arrow-right.svg" />
+
+        </div>
+
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js';
+
+            const swiperFood = new Swiper('.food-swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next-alt',
+                    prevEl: '.swiper-button-prev-alt'
+                }
+            });
+        </script>
     </section>
 
     <section>
+        
+        <div class="swiper lonely-swiper no-margin">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card">
+                    <div class="lonely">
+                        <img src="./assets/empty.png" />
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="lonely">
+                        <img src="./assets/empty.png" />
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="lonely">
+                        <img src="./assets/empty.png" />
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js';
+
+            const swiperLonely = new Swiper('.lonely-swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+
+                pagination: {
+                    el: ".swiper-pagination",
+                }
+            });
+        </script>
     </section>
 
     <footer>
