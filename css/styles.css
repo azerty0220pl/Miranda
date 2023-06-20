@@ -225,6 +225,11 @@ header .menu {
   height: auto;
   z-index: 10;
 }
+.icon--variant-medium {
+  width: 4rem;
+  height: auto;
+  z-index: 10;
+}
 .icon--variant-background {
   position: absolute;
   width: 50%;
@@ -324,6 +329,7 @@ header .menu {
 }
 .card .content .entry {
   margin: 1rem;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -334,6 +340,10 @@ header .menu {
   aspect-ratio: 1;
   width: 60%;
   max-width: 6rem;
+}
+.card .content .entry .img--icon {
+  width: 4rem;
+  padding: 1rem;
 }
 .card .content .entry .img img {
   height: 100%;
@@ -523,6 +533,16 @@ footer .footer-section {
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 2rem;
+}
+footer .footer-section .row {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-section .column p {
+  margin-top: 1.5rem;
+}
+footer .footer-section .column p:first-of-type {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

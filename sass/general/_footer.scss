@@ -6,5 +6,20 @@ footer {
         flex-direction: column;
         gap: 2rem;
         margin-bottom: 2rem;
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            p {
+                margin-top: 1.5rem;
+
+                &:first-of-type {
+                    margin-top: 0;
+                }
+            }
+        }
     }
 }
