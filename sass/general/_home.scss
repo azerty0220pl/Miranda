@@ -1,10 +1,23 @@
 .home {
     padding-top: calc(3.25rem + $margin-4) !important;
-    padding-bottom: $margin-4 !important;
+    padding-bottom: 0 !important;
 
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
     background-color: $color-grey-4;
+
+    .path {
+        background-color: $color-white;
+        width: fit-content;
+        margin-left: auto;
+        display: flex;
+        padding: 0.5rem 1rem;
+        white-space: pre;
+    }
+
+    &--margin-bottom {
+        padding-bottom: $margin-4 !important;
+    }
 }

@@ -126,6 +126,12 @@ section .no-margin, footer .no-margin {
   font-size: 120px;
   color: #F8F8F8;
 }
+.text--link {
+  text-decoration: none;
+}
+.text--link:hover {
+  cursor: pointer;
+}
 
 .button {
   background-color: transparent;
@@ -243,11 +249,22 @@ header .menu {
 
 .home {
   padding-top: 8.25rem !important;
-  padding-bottom: 5rem !important;
+  padding-bottom: 0 !important;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   background-color: #333;
+}
+.home .path {
+  background-color: white;
+  width: fit-content;
+  margin-left: auto;
+  display: flex;
+  padding: 0.5rem 1rem;
+  white-space: pre;
+}
+.home--margin-bottom {
+  padding-bottom: 5rem !important;
 }
 
 .availability {
