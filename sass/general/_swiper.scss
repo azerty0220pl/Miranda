@@ -1,0 +1,26 @@
+@mixin navigation-button {
+    top: calc(100vw * (9/32)) !important;
+    width: 3rem !important;
+    height: 3rem !important;
+    padding: 1rem !important;
+
+    &:hover {
+        background-color: $color-gold;
+        cursor: pointer;
+    }
+}
+
+.swiper-button-prev {
+    @include navigation-button;
+    left: 0 !important;
+}
+
+.swiper-button-next {
+    @include navigation-button;
+    right: 0 !important;
+}
+
+.rooms-swiper {
+    position: relative;
+    overflow: hidden;
+}

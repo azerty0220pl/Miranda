@@ -3,6 +3,7 @@
 <head lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="icon" href="./assets/icons/logo.svg" />
     <title>Miranda Hotel</title>
 </head>
@@ -70,7 +71,7 @@
     </section>
 
     <section>
-        <div class="card card--margin-negative card--shadow">
+        <div class="card card--tall card--margin-negative card--shadow">
             <div class="full">
                 <img src="./assets/empty.png" />
             </div>
@@ -84,7 +85,7 @@
         </div>
 
 
-        <div class="card card--black">
+        <div class="card card--tall card--black">
             <div class="full">
                 <img src="./assets/empty.png" />
             </div>
@@ -100,23 +101,88 @@
     <section class="rooms">
         <p class="text text--title-up text--align-center">ROOMS</p>
         <p class="text text--title-1">Hand Picked Rooms</p>
-        <div class="swiper">
+        <div class="icons">
+            <img class="icon" src="./assets/icons/bed.svg" />
+            <img class="icon" src="./assets/icons/wifi.svg" />
+            <img class="icon" src="./assets/icons/car.svg" />
+            <img class="icon" src="./assets/icons/snow.svg" />
+            <img class="icon" src="./assets/icons/strong.svg" />
+            <img class="icon" src="./assets/icons/no-smoking.svg" />
+            <img class="icon" src="./assets/icons/drink.svg" />
+        </div>
+        <div class="rooms-swiper no-margin">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <p>Minimal Duplex Room</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                    <p>$345/Night</p>
+                <div class="swiper-slide card card--wide">
+                    <div class="full">
+                        <img src="./assets/empty.png" />
+                    </div>
+                    <div class="content content--negative-margin">
+                        <p class="text text--title-2 text--align-center">Minimal Monoplex Room</p>
+                        <p class="text text--paragraph-1 text--align-center text--color-3">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore.</p>
+                        <p class="text text--price-1 text--color-5">$345<span>/Night</span></p>
+                    </div>
                 </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide card card--wide">
+                    <div class="full">
+                        <img src="./assets/empty.png" />
+                    </div>
+                    <div class="content content--negative-margin">
+                        <p class="text text--title-2 text--align-center">Minimal Duplex Room</p>
+                        <p class="text text--paragraph-1 text--align-center text--color-3">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore.</p>
+                        <p class="text text--price-1 text--color-5">$345<span>/Night</span></p>
+                    </div>
+                </div>
+                <div class="swiper-slide card card--wide">
+                    <div class="full">
+                        <img src="./assets/empty.png" />
+                    </div>
+                    <div class="content content--negative-margin">
+                        <p class="text text--title-2 text--align-center">Minimal Triplex Room</p>
+                        <p class="text text--paragraph-1 text--align-center text--color-3">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore.</p>
+                        <p class="text text--price-1 text--color-5">$345<span>/Night</span></p>
+                    </div>
+                </div>
+                <div class="swiper-slide card card--wide">
+                    <div class="full">
+                        <img src="./assets/empty.png" />
+                    </div>
+                    <div class="content content--negative-margin">
+                        <p class="text text--title-2 text--align-center">Minimal Multiplex Room</p>
+                        <p class="text text--paragraph-1 text--align-center text--color-3">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore.</p>
+                        <p class="text text--price-1 text--color-5">$345<span>/Night</span></p>
+                    </div>
+                </div>
             </div>
 
-            <div class="swiper-button-prev">prev</div>
-            <div class="swiper-button-next">next</div>
+            <img class="icon icon--background-white swiper-button-prev" src="./assets/icons/arrow-left.svg" />
+            <img class="icon icon--background-white swiper-button-next" src="./assets/icons/arrow-right.svg" />
 
-            <div class="swiper-scrollbar"></div>
-            <script type="module" src="./js/swiperRooms.js"></script>
         </div>
+
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js';
+
+            const swiper = new Swiper('.rooms-swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            });
+        </script>
     </section>
 
     <section class="intro">

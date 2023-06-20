@@ -1,11 +1,7 @@
 .card {
     margin: auto;
-    width: 75%;
-    max-width: 30rem;
-    aspect-ratio: 9/20;
 
-
-    .full {
+    @mixin image {
         height: 50%;
 
         img {
@@ -32,6 +28,15 @@
             top: 10%;
             right: 0;
         }
+
+        &--negative-margin {
+            height: auto;
+            padding: 1rem 0;
+            margin-top: -1.5rem;
+            margin-left: $margin-1;
+            margin-right: $margin-1;
+            background-color: $color-white;
+        }
     }
 
     &--margin-negative {
@@ -46,5 +51,25 @@
     &--black {
         background-color: $color-grey-5;
         margin-top: 2rem;
+    }
+
+    &--tall {
+        aspect-ratio: 9/20;
+        width: 75%;
+        max-width: 30rem;
+
+        .full {
+            @include image;
+        }
+    }
+
+    &--wide {
+        width: 100%;
+
+        .full {
+            @include image;
+            max-width: 100%;
+            aspect-ratio: 16/9;
+        }
     }
 }
