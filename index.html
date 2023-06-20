@@ -99,7 +99,7 @@
     </section>
 
     <section class="rooms">
-        <p class="text text--title-up text--align-center">ROOMS</p>
+        <p class="text text--title-up text--align-center  text--color-3">ROOMS</p>
         <p class="text text--title-1">Hand Picked Rooms</p>
         <div class="icons">
             <img class="icon" src="./assets/icons/bed.svg" />
@@ -170,7 +170,7 @@
         <script type="module">
             import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js';
 
-            const swiper = new Swiper('.rooms-swiper', {
+            const swiperRooms = new Swiper('.rooms-swiper', {
                 loop: true,
                 autoplay: {
                     delay: 4000,
@@ -202,6 +202,36 @@
     </section>
 
     <section>
+        <p class="text text--title-up text--color-3">FACILITIES</p>
+        <p class="text text--title-1">Core Features</p>
+
+        <div class="features-swiper no-margin">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card">
+                    <div class="content content--align-left">
+                        <img class="icon icon--variant-big" src="./assets/icons/rate.svg" />
+                        <p class="text text--background" src="./assets/icons/team-back.svg">01</p>
+                        <p class="text text--title-2">Have High Rating</p>
+                        <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="module">
+            const swiperFeatures = new Swiper('.features-swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            });
+        </script>
     </section>
 
     <section>

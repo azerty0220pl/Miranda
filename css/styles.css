@@ -32,6 +32,7 @@ section .no-margin, footer .no-margin {
 .text, .button {
   color: #222;
   margin: 0;
+  width: 100%;
 }
 .text--title-1 {
   font-family: "Old Standard TT";
@@ -74,7 +75,7 @@ section .no-margin, footer .no-margin {
   font-weight: 400;
   font-size: 14px;
 }
-.text--paragraph-2, .text--title-up, .text--button, .button {
+.text--paragraph-2, .text--background, .text--title-up, .text--button, .button {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 14px;
@@ -108,6 +109,16 @@ section .no-margin, footer .no-margin {
 .text--spaced, .text--title-up, .text--button, .button {
   letter-spacing: 2.8px;
 }
+.text--background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  margin-top: -4rem !important;
+  font-size: 120px;
+  color: #F8F8F8;
+}
+
 .button {
   background-color: transparent;
   border: none;
@@ -167,6 +178,7 @@ header .menu {
 }
 .icon--variant-big {
   width: 30%;
+  max-width: 10rem;
   height: auto;
   z-index: 10;
 }
@@ -265,6 +277,14 @@ header .menu {
   margin-left: 1rem;
   margin-right: 1rem;
   background-color: white;
+}
+.card .content--align-left {
+  display: block;
+  margin: 2rem;
+  margin-top: 4rem;
+}
+.card .content--align-left p {
+  margin-top: 1rem;
 }
 .card--margin-negative {
   margin-top: -12rem;

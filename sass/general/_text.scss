@@ -1,6 +1,7 @@
 .text {
     color: $color-grey-5;
     margin: 0;
+    width: 100%;
 
     &--title-1 {
         @include font-1;
@@ -19,7 +20,7 @@
 
         letter-spacing: -1.5px;
     }
-    
+
     &--title-3 {
         @include font-1;
         @include weight-1;
@@ -32,7 +33,7 @@
         @include font-2;
         @include weight-2;
         @include font-size-4;
-        
+
         span {
             @include font-size-2;
         }
@@ -42,7 +43,7 @@
         @include font-2;
         @include weight-2;
         @include font-size-3;
-        
+
         span {
             @include font-size-2;
         }
@@ -93,7 +94,7 @@
     &--align-end {
         text-align: end;
     }
-    
+
     &--spaced {
         letter-spacing: 2.8px;
     }
@@ -104,5 +105,17 @@
 
     &--title-up {
         @extend .text--paragraph-2, .text--spaced;
+    }
+
+    &--background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: fit-content;
+        margin-top: - $margin-3 !important;
+
+        @extend .text--paragraph-2;
+        @include font-size-6;
+        color: $color-grey-1;
     }
 }

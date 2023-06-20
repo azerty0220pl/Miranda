@@ -37,6 +37,16 @@
             margin-right: $margin-1;
             background-color: $color-white;
         }
+
+        &--align-left {
+            display: block;
+            margin: $margin-2; 
+            margin-top: $margin-3;
+
+            p {
+                margin-top: 1rem;
+            }
+        }
     }
 
     &--margin-negative {
