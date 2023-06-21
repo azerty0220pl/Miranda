@@ -142,6 +142,9 @@ section.background-black, footer.background-black {
 .text--link:hover {
   cursor: pointer;
 }
+.text--space {
+  white-space: pre;
+}
 
 .button {
   background-color: transparent;
