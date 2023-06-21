@@ -5,4 +5,8 @@ section, footer {
         margin-left: -$margin-1;
         margin-right: -$margin-1;
     }
+
+    &.no-bottom {
+        padding-bottom: 0;
+    }
 }

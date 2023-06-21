@@ -19,6 +19,7 @@ html,
 
 body {
   min-width: 320px;
+  background-color: #FDFBFF;
 }
 
 section, footer {
@@ -27,6 +28,9 @@ section, footer {
 section .no-margin, footer .no-margin {
   margin-left: -1rem;
   margin-right: -1rem;
+}
+section.no-bottom, footer.no-bottom {
+  padding-bottom: 0;
 }
 
 .text, .button--size-big, .button--variant-outlined, .button--variant-gold {
@@ -95,7 +99,7 @@ section .no-margin, footer .no-margin {
   font-size: 16px;
 }
 .text--color-1, .text--button, .button--size-big, .button--variant-outlined, .button--variant-gold {
-  color: white;
+  color: #FDFBFF;
 }
 .text--color-2 {
   color: #C2C2C2;
@@ -160,7 +164,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white;
+  background-color: #FDFBFF;
   z-index: 20;
 }
 header .header {
@@ -218,7 +222,7 @@ header .menu {
   background-color: transparent;
 }
 .icon--background-white, .logo img {
-  background-color: white;
+  background-color: #FDFBFF;
 }
 .icon--background-gold, .logo--size-big img {
   background-color: #BEAD8E;
@@ -257,7 +261,7 @@ header .menu {
   background-color: #333;
 }
 .home .path {
-  background-color: white;
+  background-color: #FDFBFF;
   width: fit-content;
   margin-left: auto;
   display: flex;
@@ -283,7 +287,7 @@ header .menu {
   border: none;
   border-bottom: 2px solid #BEAD8E;
   background-color: transparent;
-  color: white;
+  color: #FDFBFF;
   width: 100%;
 }
 .availability form input[type=date]::-webkit-calendar-picker-indicator {
@@ -380,7 +384,7 @@ header .menu {
   margin-top: -1.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  background-color: white;
+  background-color: #FDFBFF;
 }
 .card .content--align-left {
   display: block;
@@ -429,6 +433,17 @@ header .menu {
 }
 .card--center {
   align-items: center;
+  justify-content: center;
+}
+.card--square {
+  width: 100%;
+  aspect-ratio: 1;
+}
+.card--square-gold {
+  background-color: #BEAD8E;
+}
+.card--square-gold p {
+  color: #FDFBFF !important;
 }
 
 .intro {
@@ -453,7 +468,7 @@ header .menu {
 .video img {
   box-sizing: content-box;
   position: absolute;
-  background-color: white;
+  background-color: #FDFBFF;
   height: 1rem;
   width: 1rem;
   padding: 1.5rem;
@@ -472,7 +487,7 @@ header .menu {
   margin-bottom: -1rem;
   z-index: 10;
   width: fit-content;
-  background-color: white;
+  background-color: #FDFBFF;
   padding: 0 0.75rem;
 }
 
@@ -553,16 +568,6 @@ footer .footer-section {
   gap: 2rem;
   margin-bottom: 2rem;
 }
-footer .footer-section .row {
-  display: flex;
-  justify-content: space-between;
-}
-footer .footer-section .column p {
-  margin-top: 1.5rem;
-}
-footer .footer-section .column p:first-of-type {
-  margin-top: 0;
-}
 footer .foots-footer {
   background-color: #F8F8F8;
   margin-left: -1rem;
@@ -571,6 +576,20 @@ footer .foots-footer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.row .column {
+  width: 50%;
+}
+.row .column p {
+  margin-top: 1.5rem;
+}
+.row .column p:first-of-type {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

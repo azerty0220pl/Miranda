@@ -132,5 +132,19 @@
 
     &--center {
         align-items: center;
+        justify-content: center;
+    }
+
+    &--square {
+        width: 100%;
+        aspect-ratio: 1;
+
+        &-gold {
+            background-color: $color-gold;
+
+            p {
+                color: $color-white !important;
+            }
+        }
     }
 }
