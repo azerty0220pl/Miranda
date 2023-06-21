@@ -4,13 +4,18 @@
     flex-direction: column;
 
     @mixin image {
-        height: 50%;
-
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+    }
+
+    .image {
+        @include image;
+        width: 100%;
+        aspect-ratio: 16/9;
+        margin-bottom: 2rem;
     }
 
     .lonely {
@@ -85,7 +90,11 @@
             background-color: $color-white;
         }
 
-        &--align-left {
+        &--align-start {
+            align-items: start;
+        }
+
+        &--variant-facilities {
             display: block;
             margin: $margin-2;
             margin-top: $margin-3;
@@ -117,6 +126,7 @@
 
         .full {
             @include image;
+            height: 50%;
         }
     }
 
@@ -125,6 +135,7 @@
 
         .full {
             @include image;
+            height: 50%;
             max-width: 100%;
             aspect-ratio: 16/9;
         }
