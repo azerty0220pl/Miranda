@@ -22,17 +22,21 @@ body {
   background-color: #FCF9FF;
 }
 
-section, footer {
+section,
+footer {
   padding: 4rem 1rem;
 }
-section .no-margin, footer .no-margin {
+section .no-margin,
+footer .no-margin {
   margin-left: -1rem;
   margin-right: -1rem;
 }
-section.no-bottom, footer.no-bottom {
+section.no-bottom,
+footer.no-bottom {
   padding-bottom: 0;
 }
-section.background-black, footer.background-black {
+section.background-black,
+footer.background-black {
   background-color: #222;
 }
 
@@ -100,6 +104,13 @@ section.background-black, footer.background-black {
   font-family: "Oswald";
   font-weight: 700;
   font-size: 16px;
+  width: 2rem !important;
+  height: 2rem !important;
+  margin: 0.25rem !important;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2rem;
+  border-radius: 0 !important;
 }
 .text--color-1, .text--button, .button--size-big, .button--variant-outlined, .button--variant-gold {
   color: #FCF9FF;
@@ -580,8 +591,14 @@ header .menu {
   cursor: pointer;
 }
 
+.swiper-pagination-bullet {
+  background-color: #777 !important;
+  color: #222;
+}
+
 .swiper-pagination-bullet-active {
   background-color: #BEAD8E !important;
+  color: #FCF9FF;
 }
 
 .swiper-pagination {
@@ -596,7 +613,7 @@ header .menu {
 }
 
 footer {
-  background-image: url("../../assets/icons/background-1.svg");
+  background-image: url("../assets/icons/background-1.svg");
   padding-bottom: 0;
 }
 footer .footer-section {
