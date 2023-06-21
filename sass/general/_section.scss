@@ -1,7 +1,8 @@
-section, footer {
+section,
+footer {
     padding: $margin-3 $margin-1;
 
-    .no-margin{
+    .no-margin {
         margin-left: -$margin-1;
         margin-right: -$margin-1;
     }
