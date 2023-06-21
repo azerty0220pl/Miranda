@@ -294,7 +294,6 @@ header .menu {
   margin-left: auto;
   display: flex;
   padding: 0.5rem 1rem;
-  white-space: pre;
 }
 .home--margin-bottom {
   padding-bottom: 5rem !important;
