@@ -130,7 +130,7 @@ section.background-black, footer.background-black {
 }
 .text--background {
   position: absolute;
-  top: 0;
+  top: 3rem;
   right: 0;
   width: fit-content;
   margin-top: -4rem !important;
@@ -409,7 +409,7 @@ header .menu {
   padding: 1rem;
   padding-bottom: 4rem;
   margin: 1rem;
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 .card .content--variant-facilities p {
   margin-top: 1rem;
