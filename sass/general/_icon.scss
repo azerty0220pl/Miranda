@@ -5,15 +5,15 @@
     background-color: transparent;
 
     &--background-white {
-        background-color: $color-white;
+        background-color: $color-white !important;
     }
 
     &--background-gold {
-        background-color: $color-gold;
+        background-color: $color-gold !important;
     }
 
     &--background-grey {
-        background-color: $color-grey-1;
+        background-color: $color-grey-1 !important;
     }
 
     &--variant-big {

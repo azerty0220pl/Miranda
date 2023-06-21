@@ -241,13 +241,13 @@ header .menu {
   background-color: transparent;
 }
 .icon--background-white, .logo img {
-  background-color: #FCF9FF;
+  background-color: #FCF9FF !important;
 }
 .icon--background-gold, .logo--size-big img {
-  background-color: #BEAD8E;
+  background-color: #BEAD8E !important;
 }
 .icon--background-grey {
-  background-color: #F8F8F8;
+  background-color: #F8F8F8 !important;
 }
 .icon--variant-big {
   height: 30%;
@@ -651,7 +651,7 @@ header .menu {
 }
 
 .swiper-pagination-bullet {
-  background-color: #FCF9FF !important;
+  background-color: #777;
   color: #222;
   opacity: 1 !important;
 }
