@@ -46,7 +46,7 @@
         }
 
         .entry {
-            margin: 1rem;
+            padding: 1rem 2rem;
             width: 100%;
             display: flex;
             align-items: center;
@@ -74,6 +74,14 @@
 
             .data {
                 margin-left: 1rem;
+
+                p {
+                    margin: 0 !important;
+                }
+            }
+
+            .icon {
+                margin-left: auto;
             }
 
             &--margin-bottom {
@@ -105,7 +113,7 @@
                 margin-top: 1rem;
             }
         }
-        
+
         &--background-black {
             background-color: $color-grey-4;
         }
