@@ -253,6 +253,15 @@ header .menu {
   z-index: 0;
 }
 
+.icons {
+  position: relative;
+  margin: auto;
+  z-index: 10;
+  width: fit-content;
+  background-color: #FCF9FF;
+  padding: 0 0.75rem;
+}
+
 .hidden {
   display: none !important;
 }
@@ -402,10 +411,9 @@ header .menu {
 .card .content--negative-margin {
   height: auto;
   padding: 1rem 0;
-  margin-top: -1.5rem;
+  margin-top: -2rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  background-color: #FCF9FF;
 }
 .card .content--align-start {
   align-items: start;
@@ -422,6 +430,9 @@ header .menu {
 }
 .card .content--background-black {
   background-color: #333;
+}
+.card .content--background-white {
+  background-color: #FCF9FF;
 }
 .card--margin-negative {
   margin-top: -12rem;
@@ -511,13 +522,7 @@ header .menu {
 }
 
 .rooms .icons {
-  position: relative;
-  margin: auto;
-  margin-bottom: -1rem;
-  z-index: 10;
-  width: fit-content;
-  background-color: #FCF9FF;
-  padding: 0 0.75rem;
+  margin-bottom: -1rem !important;
 }
 
 .swiper-button-prev {

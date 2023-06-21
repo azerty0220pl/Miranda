@@ -1,11 +1,5 @@
 .rooms {
     .icons {
-        position: relative;
-        margin: auto;
-        margin-bottom: -1rem;
-        z-index: 10;
-        width: fit-content;
-        background-color: $color-white;
-        padding: 0 0.75rem;
+        margin-bottom: -1rem !important;
     }
 }
