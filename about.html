@@ -172,11 +172,36 @@
 
             const swiperFeatures = new Swiper('.features-swiper', {
                 loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
                 pagination: {
                     el: ".swiper-pagination"
                 }
             });
         </script>
+    </section>
+
+    <section>
+        <p class="text text--title-up text--color-3">COUNTER</p>
+        <p class="text text--title-1">Some Fun Facts</p>
+        <div class="card">
+            <div class="content">
+                <div class="entry">
+                    <div class="img">
+                        <img src="./assets/icons/comment.svg" alt="">
+                    </div>
+                    <div class="data">
+                        <p class="text text--title-1">8000</p>
+                        <p class="text text--paragraph-1">Happy Users</p>
+                    </div>
+                    <div class="img">
+                        <img src="./assets/icons/arrow-long.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
@@ -219,7 +244,7 @@
             });
         </script>
     </section>
-    
+
     <footer>
         <div>
             <div class="footer-section">
