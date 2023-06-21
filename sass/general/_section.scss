@@ -9,4 +9,8 @@ section, footer {
     &.no-bottom {
         padding-bottom: 0;
     }
+
+    &.background-black {
+        background-color: $color-grey-5;
+    }
 }

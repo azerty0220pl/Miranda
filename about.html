@@ -101,4 +101,81 @@
             </div>
         </div>
     </section>
+
+    <section class="background-black">
+        <p class="text text--title-up text--color-1 text--align-center">FACILITIES</p>
+        <p class="text text--title-1 text--align-center text--color-1">Core Features</p>
+
+        <div class="swiper features-swiper no-margin">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card">
+                    <div class="content content--variant-facilities content--background-black">
+                        <img class="icon icon--variant-big" src="./assets/icons/rate.svg" />
+                        <p class="text text--background" src="./assets/icons/team-back.svg">01</p>
+                        <p class="text text--title-2 text--color-1">Have High Rating</p>
+                        <p class="text text--paragraph-1 text--color-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="content content--variant-facilities content--background-black">
+                        <img class="icon icon--variant-big" src="./assets/icons/clock.svg" />
+                        <p class="text text--background" src="./assets/icons/team-back.svg">02</p>
+                        <p class="text text--title-2 text--color-1">Quit Hours</p>
+                        <p class="text text--paragraph-1 text--color-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="content content--variant-facilities content--background-black">
+                        <img class="icon icon--variant-big" src="./assets/icons/location.svg" />
+                        <p class="text text--background" src="./assets/icons/team-back.svg">03</p>
+                        <p class="text text--title-2 text--color-1">Best Locations</p>
+                        <p class="text text--paragraph-1 text--color-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="content content--variant-facilities content--background-black">
+                        <img class="icon icon--variant-big" src="./assets/icons/clock-alt.svg" />
+                        <p class="text text--background" src="./assets/icons/team-back.svg">04</p>
+                        <p class="text text--title-2 text--color-1">Free Cancelation</p>
+                        <p class="text text--paragraph-1 text--color-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="content content--variant-facilities content--background-black">
+                        <img class="icon icon--variant-big" src="./assets/icons/credit-card.svg" />
+                        <p class="text text--background" src="./assets/icons/team-back.svg">05</p>
+                        <p class="text text--title-2 text--color-1">Payment Options</p>
+                        <p class="text text--paragraph-1 text--color-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="content content--variant-facilities content--background-black">
+                        <img class="icon icon--variant-big" src="./assets/icons/discount.svg" />
+                        <p class="text text--background" src="./assets/icons/team-back.svg">06</p>
+                        <p class="text text--title-2 text--color-1">Special Offers</p>
+                        <p class="text text--paragraph-1 text--color-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js';
+
+            const swiperFeatures = new Swiper('.features-swiper', {
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination"
+                }
+            });
+        </script>
+    </section>
 </body>

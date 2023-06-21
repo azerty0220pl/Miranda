@@ -32,6 +32,9 @@ section .no-margin, footer .no-margin {
 section.no-bottom, footer.no-bottom {
   padding-bottom: 0;
 }
+section.background-black, footer.background-black {
+  background-color: #222;
+}
 
 .text, .button--size-big, .button--variant-outlined, .button--variant-gold {
   color: #222;
@@ -113,6 +116,9 @@ section.no-bottom, footer.no-bottom {
 .text--color-5 {
   color: #BEAD8E;
 }
+.text--color-background {
+  color: #F8F8F8;
+}
 .text--align-center, .text--button, .button--size-big, .button--variant-outlined, .button--variant-gold {
   text-align: center;
 }
@@ -129,7 +135,6 @@ section.no-bottom, footer.no-bottom {
   width: fit-content;
   margin-top: -4rem !important;
   font-size: 120px;
-  color: #F8F8F8;
 }
 .text--link {
   text-decoration: none;
@@ -231,9 +236,9 @@ header .menu {
   background-color: #F8F8F8;
 }
 .icon--variant-big {
-  width: 30%;
+  height: 30%;
   max-width: 10rem;
-  height: auto;
+  width: auto;
   z-index: 10;
 }
 .icon--variant-medium {
@@ -401,11 +406,16 @@ header .menu {
 }
 .card .content--variant-facilities {
   display: block;
-  margin: 2rem;
-  margin-top: 4rem;
+  padding: 1rem;
+  padding-bottom: 4rem;
+  margin: 1rem;
+  padding-top: 4rem;
 }
 .card .content--variant-facilities p {
   margin-top: 1rem;
+}
+.card .content--background-black {
+  background-color: #333;
 }
 .card--margin-negative {
   margin-top: -12rem;

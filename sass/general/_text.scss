@@ -98,6 +98,10 @@
         color: $color-gold;
     }
 
+    &--color-background {
+        color: $color-grey-1;
+    }
+
     &--align-center {
         text-align: center;
     }
@@ -127,7 +131,6 @@
 
         @extend .text--paragraph-2;
         @include font-size-6;
-        color: $color-grey-1;
     }
 
     &--link {

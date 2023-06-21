@@ -96,12 +96,18 @@
 
         &--variant-facilities {
             display: block;
-            margin: $margin-2;
-            margin-top: $margin-3;
+            padding: 1rem;
+            padding-bottom: 4rem;
+            margin: 1rem;
+            padding-top: 4rem;
 
             p {
                 margin-top: 1rem;
             }
+        }
+        
+        &--background-black {
+            background-color: $color-grey-4;
         }
     }
 
