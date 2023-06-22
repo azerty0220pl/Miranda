@@ -57,6 +57,7 @@
         justify-content: center;
         gap: 0.5rem;
         align-items: center;
+        width: 100%;
 
         .text--paragraph-1 {
             width: 75%;
@@ -162,6 +163,10 @@
 
         &--background-white {
             background-color: $color-white;
+        }
+
+        &--padding-bottom {
+            padding-bottom: 2rem;
         }
     }
 

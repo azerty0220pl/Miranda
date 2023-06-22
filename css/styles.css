@@ -288,6 +288,7 @@ header .menu {
   padding: 0 0.25rem;
 }
 .icons--margin-negative {
+  margin-top: -1.25rem !important;
   margin-bottom: -1rem !important;
 }
 
@@ -377,6 +378,7 @@ header .menu {
   justify-content: center;
   gap: 0.5rem;
   align-items: center;
+  width: 100%;
 }
 .card .content .text--paragraph-1 {
   width: 75%;
@@ -461,6 +463,9 @@ header .menu {
 }
 .card .content--background-white {
   background-color: #FCF9FF;
+}
+.card .content--padding-bottom {
+  padding-bottom: 2rem;
 }
 .card--margin-negative {
   margin-top: -12rem;
