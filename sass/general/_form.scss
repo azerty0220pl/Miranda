@@ -15,6 +15,10 @@
         &:focus {
             outline: none;
         }
+
+        &::placeholder {
+            @extend .text--paragraph-1, .text--color-3;
+        }
     }
 
     input {
@@ -31,6 +35,10 @@
 
     textarea {
         @include input;
+
+        &::placeholder {
+            @extend .text--paragraph-1, .text--color-3;
+        }
     }
 
     &--color-dark {

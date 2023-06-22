@@ -90,7 +90,7 @@ footer.background-black {
 .text--price-2 span {
   font-size: 16px;
 }
-.text--paragraph-1 {
+.text--paragraph-1, .form textarea::placeholder, .form input::placeholder {
   font-family: "Archivo";
   font-weight: 400;
   font-size: 14px;
@@ -118,7 +118,7 @@ footer.background-black {
 .text--color-2 {
   color: #C2C2C2;
 }
-.text--color-3 {
+.text--color-3, .form textarea::placeholder, .form input::placeholder {
   color: #777;
 }
 .text--color-4 {
@@ -380,7 +380,7 @@ header .menu {
   align-items: center;
   width: 100%;
 }
-.card .content .text--paragraph-1 {
+.card .content .text--paragraph-1, .card .content .form textarea::placeholder, .form .card .content textarea::placeholder, .card .content .form input::placeholder, .form .card .content input::placeholder {
   width: 75%;
 }
 .card .content .icon--variant-background {
@@ -396,7 +396,7 @@ header .menu {
 .card .content .entry--padding-small {
   padding: 0.5rem 1rem;
 }
-.card .content .entry .text--paragraph-1 {
+.card .content .entry .text--paragraph-1, .card .content .entry .form textarea::placeholder, .form .card .content .entry textarea::placeholder, .card .content .entry .form input::placeholder, .form .card .content .entry input::placeholder {
   width: 100%;
 }
 .card .content .entry .img {
@@ -450,7 +450,7 @@ header .menu {
   align-items: start;
   padding-bottom: 3rem;
 }
-.card .content--variant-offers .text--paragraph-1 {
+.card .content--variant-offers .text--paragraph-1, .card .content--variant-offers .form textarea::placeholder, .form .card .content--variant-offers textarea::placeholder, .card .content--variant-offers .form input::placeholder, .form .card .content--variant-offers input::placeholder {
   width: 100%;
 }
 .card .content--variant-offers .prices {

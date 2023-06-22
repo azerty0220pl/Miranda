@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./assets/icons/logo.svg" />
-    <title>Offers|Miranda Hotel</title>
+    <title>Contact|Miranda Hotel</title>
 </head>
 
 <body>
@@ -51,7 +51,7 @@
         </div>
     </section>
     
-    <section>
+    <section class="no-bottom">
         <div class="card ">
             <div class="content">
                 <div class="entry">
@@ -85,6 +85,44 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="card card--wide card--margin-top card--center">
+            <div class="image full">
+                <img src="./assets/empty.png" />
+            </div>
+            <div class="content">
+                <form id="contact-form" class="form form--margin-top">
+                    <label id="name-label" for="name">
+                        <input type="text" id="name" placeholder="Your full name" />
+                    </label>
+                    <label id="phone-label" for="phone">
+                        <input type="text" id="phone" placeholder="Add phone number" />
+                    </label>
+                    <label id="email-label" for="email">
+                        <input type="email" id="email" placeholder="Enter email address" />
+                    </label>
+                    <label id="subject-label" for="phone">
+                        <input type="text" id="subject" placeholder="Enter subject" />
+                    </label>
+                    <label id="msg-label" for="msg">
+                        <textarea id="msg" rows="5" placeholder="Enter message"></textarea>
+                    </label>
+                    <button type="submit" id="submit" class="button button--variant-gold">SEND</button>
+                </form>
+            </div>
+
+            <!--div class="content">
+                <p class="text text--price-2 text--align-center">¡Thank you for your message!</p>
+                <p class="text text--paragraph-1 text--margin-top">
+                    We have received it correctly. We will look into it very soon.
+                </p>
+                <p class="text text--paragraph-1">
+                    The Miranda Hotel
+                </p>
+            </div-->
         </div>
     </section>
 
