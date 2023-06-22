@@ -46,10 +46,14 @@
         }
 
         .entry {
-            padding: 1rem 2rem;
+            padding: 1rem 0rem;
             width: 100%;
             display: flex;
             align-items: center;
+
+            &--padding-small{
+                padding: 0.5rem 1rem;
+            }
 
             .text--paragraph-1 {
                 width: 100%;

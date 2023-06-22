@@ -156,6 +156,9 @@ footer.background-black {
 .text--space {
   white-space: pre;
 }
+.text--inline {
+  display: inline;
+}
 
 .button {
   background-color: transparent;
@@ -352,10 +355,13 @@ header .menu {
   right: 0;
 }
 .card .content .entry {
-  padding: 1rem 2rem;
+  padding: 1rem 0rem;
   width: 100%;
   display: flex;
   align-items: center;
+}
+.card .content .entry--padding-small {
+  padding: 0.5rem 1rem;
 }
 .card .content .entry .text--paragraph-1 {
   width: 100%;
@@ -663,6 +669,7 @@ footer .foots-footer {
 .row {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .row .column {
   width: 50%;
