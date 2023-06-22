@@ -105,6 +105,10 @@
         color: $color-gold;
     }
 
+    &--color-6 {
+        color: $color-red;
+    }
+
     &--color-background {
         color: $color-grey-1;
     }
@@ -158,5 +162,9 @@
 
     &--margin-top {
         margin-top: 1rem;
+    }
+
+    &--decoration-wrong {
+        text-decoration: line-through;
     }
 }

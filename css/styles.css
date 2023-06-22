@@ -127,6 +127,9 @@ footer.background-black {
 .text--color-5 {
   color: #BEAD8E;
 }
+.text--color-6 {
+  color: #DE5757;
+}
 .text--color-background {
   color: #F8F8F8;
 }
@@ -161,6 +164,9 @@ footer.background-black {
 }
 .text--margin-top {
   margin-top: 1rem;
+}
+.text--decoration-wrong {
+  text-decoration: line-through;
 }
 
 .button {
@@ -280,6 +286,9 @@ header .menu {
   width: fit-content;
   background-color: #FCF9FF;
   padding: 0 0.25rem;
+}
+.icons--margin-negative {
+  margin-bottom: -1rem !important;
 }
 
 .hidden {
@@ -434,6 +443,19 @@ header .menu {
 .card .content--variant-facilities p {
   margin-top: 1rem;
 }
+.card .content--variant-offers {
+  padding: 1rem;
+  align-items: start;
+  padding-bottom: 3rem;
+}
+.card .content--variant-offers .text--paragraph-1 {
+  width: 100%;
+}
+.card .content--variant-offers .prices {
+  position: absolute;
+  right: 1rem;
+  top: -4.5rem;
+}
 .card .content--background-black {
   background-color: #333;
 }
@@ -528,10 +550,6 @@ header .menu {
 }
 .video img:hover {
   cursor: pointer;
-}
-
-.rooms .icons {
-  margin-bottom: -1rem !important;
 }
 
 .swiper-button-prev-alt-2 {

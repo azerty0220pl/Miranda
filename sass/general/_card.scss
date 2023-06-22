@@ -139,6 +139,23 @@
             }
         }
 
+        &--variant-offers {
+            padding: 1rem;
+            align-items: start;
+
+            .text--paragraph-1 {
+                width: 100%;
+            }
+
+            .prices {
+                position: absolute;
+                right: 1rem;
+                top: -4.5rem;
+            }
+
+            padding-bottom: 3rem;
+        }
+
         &--background-black {
             background-color: $color-grey-4;
         }

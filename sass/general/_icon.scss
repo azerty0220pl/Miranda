@@ -44,4 +44,9 @@
     width: fit-content;
     background-color: $color-white;
     padding: 0 0.25rem;
+
+    
+    &--margin-negative {
+        margin-bottom: -1rem !important;
+    }
 }
