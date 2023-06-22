@@ -159,6 +159,9 @@ footer.background-black {
 .text--inline {
   display: inline;
 }
+.text--margin-top {
+  margin-top: 1rem;
+}
 
 .button {
   background-color: transparent;
