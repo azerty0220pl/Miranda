@@ -12,8 +12,12 @@
         background-color: $color-white;
         width: fit-content;
         margin-left: auto;
-        display: flex;
         padding: 0.5rem 1rem;
+
+        * {
+            display: inline-block;
+            width: fit-content;
+        }
     }
 
     &--margin-bottom {
