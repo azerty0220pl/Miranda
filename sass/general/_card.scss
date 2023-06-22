@@ -13,9 +13,31 @@
 
     .image {
         @include image;
+        position: relative;
         width: 100%;
         aspect-ratio: 16/9;
         margin-bottom: 2rem;
+
+        &--rounded {
+            margin: auto;
+            width: 40%;
+            aspect-ratio: 1;
+
+            img {
+                border-radius: 100%;
+            }
+        }
+
+        .tick {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: $color-gold;
+            border: 0.75vw $color-white solid;
+            height: 9vw;
+            width: 9vw;
+            padding: 2vw;
+        }
     }
 
     .lonely {

@@ -322,6 +322,7 @@ header .menu {
   flex-direction: column;
 }
 .card .image {
+  position: relative;
   width: 100%;
   aspect-ratio: 16/9;
   margin-bottom: 2rem;
@@ -330,6 +331,24 @@ header .menu {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.card .image--rounded {
+  margin: auto;
+  width: 40%;
+  aspect-ratio: 1;
+}
+.card .image--rounded img {
+  border-radius: 100%;
+}
+.card .image .tick {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #BEAD8E;
+  border: 0.75vw #FCF9FF solid;
+  height: 9vw;
+  width: 9vw;
+  padding: 2vw;
 }
 .card .lonely {
   margin: 1rem;
