@@ -95,7 +95,7 @@ footer.background-black {
   font-weight: 400;
   font-size: 14px;
 }
-.text--paragraph-2, .text--background, .text--title-up, .text--button, .button--size-big, .button--variant-outlined, .button--variant-gold {
+.text--paragraph-2, .text--background, .text--background-alt, .text--title-up, .text--button, .button--size-big, .button--variant-outlined, .button--variant-gold {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 14px;
@@ -142,13 +142,19 @@ footer.background-black {
 .text--spaced, .text--title-up, .text--button, .button--size-big, .button--variant-outlined, .button--variant-gold {
   letter-spacing: 2.8px;
 }
-.text--background {
+.text--background, .text--background-alt {
   position: absolute;
   top: 3rem;
   right: 0;
   width: fit-content;
   margin-top: -4rem !important;
   font-size: 120px;
+}
+.text--background-alt {
+  z-index: -5;
+  top: 0;
+  margin: 0 !important;
+  font-size: 200px;
 }
 .text--link {
   text-decoration: none;
@@ -389,6 +395,7 @@ header .menu {
   right: 0;
 }
 .card .content .entry {
+  position: relative;
   padding: 1rem 0rem;
   width: 100%;
   display: flex;
