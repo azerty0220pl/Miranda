@@ -376,6 +376,7 @@ header .menu {
 .card .lonely img {
   aspect-ratio: 1;
   width: 100%;
+  object-fit: cover;
 }
 .card .content {
   height: 50%;
