@@ -24,3 +24,12 @@
         padding-bottom: $margin-4 !important;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .home {
+        div {
+            display: flex;
+            gap: 2rem;
+        }
+    }
+}
