@@ -21,3 +21,28 @@ footer {
         gap: 1rem;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+
+    footer {
+        .footer-section {
+            max-width: 33%;
+        }
+
+        .main-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .foots-footer {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 1rem;
+
+            :last-child {
+                text-align: end;
+            }
+        }
+    }
+}

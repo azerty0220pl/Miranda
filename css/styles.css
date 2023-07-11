@@ -512,6 +512,9 @@ header .menu-alt {
 .card .content--padding-bottom {
   padding-bottom: 2rem;
 }
+.card .content--height-full {
+  height: 100%;
+}
 .card--margin-negative {
   margin-top: -12rem;
   margin-bottom: 2rem;
@@ -756,6 +759,24 @@ footer .foots-footer {
   gap: 1rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  footer .footer-section {
+    max-width: 33%;
+  }
+  footer .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .foots-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  footer .foots-footer :last-child {
+    text-align: end;
+  }
+}
 .row {
   display: flex;
   justify-content: space-between;
