@@ -367,6 +367,18 @@ header .menu-alt {
   padding-bottom: 2rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .availability .form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .availability .form label {
+    width: 33%;
+  }
+  .availability .form label :last-of-type {
+    margin-right: 5rem;
+  }
+}
 .about {
   background-color: #F8F8F8;
   padding-bottom: 12rem;
@@ -832,6 +844,7 @@ footer .foots-footer {
   outline: none;
 }
 .form--color-dark input[type=date] {
+  position: relative;
   border-bottom: 2px solid #BEAD8E;
   background-color: transparent;
   color: #FCF9FF;
@@ -840,7 +853,7 @@ footer .foots-footer {
 .form--color-dark input[type=date]::-webkit-calendar-picker-indicator {
   background-image: url("../assets/icons/calendar.svg");
   position: absolute;
-  left: 15px;
+  left: 5px;
 }
 .form--color-dark input[type=date]::-webkit-datetime-edit-fields-wrapper {
   position: relative;
