@@ -1,0 +1,60 @@
+.paragraph {
+    &-1 {
+        @extend .text, .text--font-2, .text--weight-1, .text--size-1;
+    }
+
+    &-2 {
+        @extend .text, .text--font-2, .text--weight-2, .text--size-1;
+    }
+}
+
+.text--pagination {
+    @extend .text, .text--font-3, .text--weight-2, .text--size-2, .text--align-center;
+    width: 2rem !important;
+    height: 2rem !important;
+    margin: 0.25rem !important;
+    border-radius: 0 !important;
+    line-height: 2rem;
+}
+
+.text {
+    &--button {
+        @extend .text, .text--color-white, .text--align-center, .text--spacing-5, .paragraph-2;
+    }
+
+    &--background {
+        position: absolute;
+        top: 3rem;
+        right: 0;
+        width: fit-content;
+        margin-top: - $margin-3 !important;
+
+        @extend .paragraph-2, .text--size-6;
+    }
+}
+
+.link {
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.price {
+    &-1 {
+        @extend .text, .text--font-2, .text--weight-2, .text--size-4;
+
+        span {
+            @extend .text--size-2;
+        }
+    }
+
+    &-2 {
+        @extend .text, .text--font-2, .text--weight-2, .text--size-3;
+
+        span {
+            @extend .text--size-2;
+        }
+    }
+}
