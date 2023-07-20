@@ -68,7 +68,7 @@
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        gap: 10rem;
+        gap: 2rem;
 
         .first-div {
             padding: 0;
@@ -104,6 +104,7 @@
                 height: 50%;
                 gap: 0.5rem;
                 width: 100%;
+                @include padding('y', 5rem);
 
                 p {
                     width: 50%;
@@ -118,7 +119,7 @@
             margin: 0;
             gap: 2rem;
 
-            width: 50%;
+            width: 60%;
             z-index: 1;
 
             .first-card {
