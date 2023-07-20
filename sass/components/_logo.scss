@@ -1,5 +1,5 @@
 .logo {
-
+    display: inline;
     img {
         @extend .icon, .icon--background-white;
         box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);

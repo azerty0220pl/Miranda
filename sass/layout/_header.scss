@@ -12,6 +12,11 @@ header {
         padding: 0.5rem;
         background-color: $color-white;
         align-items: center;
+
+        .left-div {
+            display: flex;
+            align-items: center;
+        }
     }
 
     .menu {
@@ -35,8 +40,9 @@ header {
             .menu-alt  {
                 display: flex;
                 flex-direction: row;
-                gap: 1rem;
-                width: 50%;
+                justify-content: start;
+                gap: 3rem;
+                width: 70%;
             }
         }
     }
