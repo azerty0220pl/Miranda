@@ -77,3 +77,15 @@
 .swiper-pagination {
     position: relative !important;
 }
+
+@media only screen and (min-width: 1000px) {
+    .swiper-button-prev {
+        left: 2rem !important;
+    }
+
+    .swiper-button-next {
+        @include navigation-button;
+        top: calc(100vw * (9/32)) !important;
+        right: 2rem !important;
+    }
+}
