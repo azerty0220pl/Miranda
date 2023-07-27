@@ -11,8 +11,8 @@
 <body>
     <header>
         <div class="header">
-            <div>
-                <button class="button toggler">
+            <div class="left-div">
+                <button class="button toggler hidden--desktop">
                     <img class="icon" src="./assets/icons/bars.svg" />
                 </button>
                 <div class="logo logo--size-small">
@@ -23,11 +23,11 @@
                     </div>
                 </div>
             </div>
-            <div class="menu-alt">
-                <a class="text text--link text--paragraph-2" href="./about.html">About Us</a>
-                <a class="text text--link text--paragraph-2" href="./rooms.html">Rooms</a>
-                <a class="text text--link text--paragraph-2" href="./offers.html">Offers</a>
-                <a class="text text--link text--paragraph-2" href="./contact.html">Contact</a>
+            <div class="hidden--mobile menu-alt">
+                <a class="link paragraph-2 text--color-grey5" href="./about.html">About Us</a>
+                <a class="link paragraph-2 text--color-grey5" href="./rooms.html">Rooms</a>
+                <a class="link paragraph-2 text--color-grey5" href="./offers.html">Offers</a>
+                <a class="link paragraph-2 text--color-grey5" href="./contact.html">Contact</a>
             </div>
             <div>
                 <button class="button">
@@ -39,17 +39,17 @@
             </div>
         </div>
         <div class="menu hidden">
-            <a class="text text--link text--paragraph-2" href="./about.html">About Us</a>
-            <a class="text text--link text--paragraph-2" href="./rooms.html">Rooms</a>
-            <a class="text text--link text--paragraph-2" href="./offers.html">Offers</a>
-            <a class="text text--link text--paragraph-2" href="./contact.html">Contact</a>
+            <a class="link paragraph-2 text--color-grey5" href="./about.html">About Us</a>
+            <a class="link paragraph-2 text--color-grey5" href="./rooms.html">Rooms</a>
+            <a class="link paragraph-2 text--color-grey5" href="./offers.html">Offers</a>
+            <a class="link paragraph-2 text--color-grey5" href="./contact.html">Contact</a>
         </div>
         <script src="./js/menu-toggler.js"></script>
     </header>
 
     <section class="home home--margin-bottom">
-        <p class="text text--color-1 text--title-up">THE ULTIMATE LUXURY EXPERIENCE</p>
-        <p class="text text--title-1 text--color-1">The Perfect Base For You</p>
+        <p class="title-up text--color-white">THE ULTIMATE LUXURY EXPERIENCE</p>
+        <p class="title-1">The Perfect Base For You</p>
         <div>
             <button class="button button--variant-gold">TAKE A TOUR</button>
             <button class="button button--variant-outlined">LEARN MORE</button>
@@ -59,11 +59,11 @@
     <section class="availability">
         <form id="contact-form" class="form form--color-dark">
             <label id="from-label" for="name">
-                <p class="text text--color-1 text--paragraph-2">Arrival Date</p>
+                <p class="text--color-white paragraph-2">Arrival Date</p>
                 <input type="date" id="from" />
             </label>
             <label id="to-label" for="to">
-                <p class="text text--color-1 text--paragraph-2">LeDeparture Date</p>
+                <p class="text--color-white paragraph-2">LeDeparture Date</p>
                 <input type="date" id="to" />
             </label>
             <button type="submit" id="submit" class="button button--variant-gold">CHECK AVAILABILITY</button>
@@ -71,49 +71,50 @@
     </section>
 
     <section class="about">
-        <p class="text text--title-up text--color-3">ABOUT US</p>
-        <p class="text text--title-1">Discover Our Underground.</p>
-        <p class="text text--paragraph-1 text--color-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button class="button button--variant-gold">BOOK NOW</button>
-    </section>
-
-    <section>
-        <div class="card card--tall card--margin-negative card--shadow">
-            <div class="full">
-                <img src="./assets/img/team.jpg" />
-            </div>
-            <div class="content">
-                <img class="icon icon--variant-big" src="./assets/icons/team.svg" />
-                <img class="icon icon--variant-background" src="./assets/icons/team-back.svg" />
-                <p class="text text--title-2 text--align-center">Strong Team</p>
-                <p class="text text--paragraph-1 text--align-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit, sed do eiusmod tempor.</p>
-            </div>
+        <div class="first-div">
+            <p class="title-up text--color-grey-3">ABOUT US</p>
+            <p class="title-2">Discover Our Underground.</p>
+            <p class="paragraph-1 text--color-grey-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="button button--variant-gold">BOOK NOW</button>
         </div>
 
-
-        <div class="card card--tall card--black">
-            <div class="full">
-                <img src="./assets/img/luxury.jpg" />
+        <div class="second-div">
+            <div class="first-card">
+                <div class="card-img">
+                    <img src="./assets/img/team.jpg" />
+                </div>
+                <div class="card-content">
+                    <img class="icon icon--variant-big" src="./assets/icons/team.svg" />
+                    <img class="icon icon--variant-background" src="./assets/icons/team-back.svg" />
+                    <p class="title-3 text--align-center text--color-grey5">Strong Team</p>
+                    <p class="paragraph-1 text--align-center text--color-grey-5">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing
+                        elit, sed do eiusmod tempor.</p>
+                </div>
             </div>
-            <div class="content">
-                <img class="icon icon--variant-big" src="./assets/icons/calendar-arrow.svg" />
-                <p class="text text--title-2 text--align-center text--color-1">Luxury Room</p>
-                <p class="text text--paragraph-1 text--align-center text--color-1">Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <div class="second-card">
+                <div class="card-img">
+                    <img src="./assets/img/luxury.jpg" />
+                </div>
+                <div class="card-content">
+                    <img class="icon icon--variant-big" src="./assets/icons/calendar-arrow.svg" />
+                    <p class="title-3 text--align-center text--color-white">Luxury Room</p>
+                    <p class="paragraph-1 text--align-center text--color-white">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="rooms">
-        <p class="text text--title-up text--align-center  text--color-3">ROOMS</p>
-        <p class="text text--title-1">Hand Picked Rooms</p>
-        <div class="swiper rooms-swiper no-margin">
+        <p class="title-up text--align-center text--color-grey-3">ROOMS</p>
+        <p class="title-2 text--align-center text--color-grey-5">Hand Picked Rooms</p>
+        <div class="swiper rooms-swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide card card--wide">
-                    <div class="full">
+                <div class="swiper-slide room">
+                    <div class="room-img">
                         <img src="./assets/img/rooms.jpg" />
                     </div>
                     <div class="icons icons--margin-negative">
@@ -125,16 +126,16 @@
                         <img class="icon" src="./assets/icons/no-smoking.svg" />
                         <img class="icon" src="./assets/icons/drink.svg" />
                     </div>
-                    <div class="content content--padding-bottom content--background-white">
-                        <p class="text text--title-2 text--align-center">Minimal Monoplex Room</p>
-                        <p class="text text--paragraph-1 text--align-center text--color-3">Lorem ipsum dolor sit amet,
+                    <div class="room-content">
+                        <p class="title-3 text--align-center text--color-grey-5">Minimal Monoplex Room</p>
+                        <p class="paragraph-1 text--align-center text--color-grey-3">Lorem ipsum dolor sit amet,
                             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore.</p>
-                        <p class="text text--price-1 text--color-5 text--align-center text--margin-top">$345<span>/Night</span></p>
+                        <p class="price-1 text--color-gold text--align-center">$345<span>/Night</span></p>
                     </div>
                 </div>
-                <div class="swiper-slide card card--wide">
-                    <div class="full">
+                <div class="swiper-slide room">
+                    <div class="room-img">
                         <img src="./assets/img/rooms.jpg" />
                     </div>
                     <div class="icons icons--margin-negative">
@@ -146,16 +147,16 @@
                         <img class="icon" src="./assets/icons/no-smoking.svg" />
                         <img class="icon" src="./assets/icons/drink.svg" />
                     </div>
-                    <div class="content content--padding-bottom content--background-white">
-                        <p class="text text--title-2 text--align-center">Minimal Duplex Room</p>
-                        <p class="text text--paragraph-1 text--align-center text--color-3">Lorem ipsum dolor sit amet,
+                    <div class="room-content">
+                        <p class="title-3 text--align-center text--color-grey-5">Minimal Duplex Room</p>
+                        <p class="paragraph-1 text--align-center text--color-grey-3">Lorem ipsum dolor sit amet,
                             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore.</p>
-                        <p class="text text--price-1 text--color-5 text--align-center text--margin-top">$345<span>/Night</span></p>
+                        <p class="price-1 text--color-gold text--align-center">$345<span>/Night</span></p>
                     </div>
                 </div>
-                <div class="swiper-slide card card--wide">
-                    <div class="full">
+                <div class="swiper-slide room">
+                    <div class="room-img">
                         <img src="./assets/img/rooms.jpg" />
                     </div>
                     <div class="icons icons--margin-negative">
@@ -167,16 +168,17 @@
                         <img class="icon" src="./assets/icons/no-smoking.svg" />
                         <img class="icon" src="./assets/icons/drink.svg" />
                     </div>
-                    <div class="content content--padding-bottom content--background-white">
-                        <p class="text text--title-2 text--align-center">Minimal Triplex Room</p>
-                        <p class="text text--paragraph-1 text--align-center text--color-3">Lorem ipsum dolor sit amet,
+                    <div class="room-content">
+                        <p class="title-3 text--align-center text--color-grey-5">Minimal Triplex Room</p>
+                        <p class="paragraph-1 text--align-center text--color-grey-3">Lorem ipsum dolor sit amet,
                             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore.</p>
-                        <p class="text text--price-1 text--color-5 text--align-center text--margin-top">$345<span>/Night</span></p>
+                        <p class="price-1 text--color-gold text--align-center">$345<span>/Night</span></p>
                     </div>
                 </div>
-                <div class="swiper-slide card card--wide">
-                    <div class="full">
+
+                <div class="swiper-slide room">
+                    <div class="room-img">
                         <img src="./assets/img/rooms.jpg" />
                     </div>
                     <div class="icons icons--margin-negative">
@@ -188,12 +190,12 @@
                         <img class="icon" src="./assets/icons/no-smoking.svg" />
                         <img class="icon" src="./assets/icons/drink.svg" />
                     </div>
-                    <div class="content content--padding-bottom content--background-white">
-                        <p class="text text--title-2 text--align-center">Minimal Multiplex Room</p>
-                        <p class="text text--paragraph-1 text--align-center text--color-3">Lorem ipsum dolor sit amet,
+                    <div class="room-content">
+                        <p class="title-3 text--align-center text--color-grey-5">Minimal Multiplex Room</p>
+                        <p class="paragraph-1 text--align-center text--color-grey-3">Lorem ipsum dolor sit amet,
                             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore.</p>
-                        <p class="text text--price-1 text--color-5 text--align-center text--margin-top">$345<span>/Night</span></p>
+                        <p class="price-1 text--color-gold text--align-center">$345<span>/Night</span></p>
                     </div>
                 </div>
             </div>
@@ -216,10 +218,6 @@
 
             const swiperRooms = new Swiper('.rooms-swiper', {
                 loop: true,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
 
                 navigation: {
                     nextEl: '.swiper-button-next',
@@ -230,86 +228,84 @@
     </section>
 
     <section class="intro">
-        <p class="text text--title-up text--color-5">INTRO VIDEO</p>
-        <p class="text text--title-1 text--color-1">Meet With Our Luxury Place.</p>
-        <p class="text text--paragraph-1 text--color-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
-        <div class="video">
+        <div class="first-div">
+            <p class="title-up text--color-gold">INTRO VIDEO</p>
+            <p class="title-2 text--color-white">Meet With Our Luxury Place.</p>
+            <p class="paragraph-1 text--color-grey-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.
+            </p>
+            <button class="button button--variant-gold hidden--mobile">BOOK NOW</button>
+        </div>
+        <div class="video second-div">
             <video muted loop>
                 <source src='./assets/video.mp4' type="video/mp4" />
             </video>
             <img class="play" src="./assets/icons/play.svg" />
             <script src="./js/video.js"></script>
         </div>
-        <button class="button button--variant-gold">BOOK NOW</button>
+        <button class="button button--variant-gold hidden--desktop">BOOK NOW</button>
     </section>
 
-    <section>
-        <p class="text text--title-up text--color-3 text--align-center">FACILITIES</p>
-        <p class="text text--title-1 text--align-center">Core Features</p>
+    <section class="facilities">
+        <p class="title-up text--color-grey-3 text--align-center">FACILITIES</p>
+        <p class="title-2 text--align-center text--color-grey5">Core Features</p>
 
-        <div class="swiper features-swiper no-margin">
+        <div class="swiper features-swiper no-margin hidden--desktop">
             <div class="swiper-wrapper">
-                <div class="swiper-slide card">
-                    <div class="content content--variant-facilities">
-                        <img class="icon icon--variant-big" src="./assets/icons/rate.svg" />
-                        <p class="text text--background text--color-background" src="./assets/icons/team-back.svg">01
-                        </p>
-                        <p class="text text--title-2">Have High Rating</p>
-                        <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
-                    </div>
+                <div class="swiper-slide facilities-card">
+                    <img class="icon icon--variant-big" src="./assets/icons/rate.svg" />
+                    <p class="background-text text--color-grey-1" src="./assets/icons/team-back.svg">01
+                    </p>
+                    <p class="title-3">Have High Rating</p>
+                    <p class="paragraph-1 text--color-grey-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed
+                        do eiusmod tempor incididunt ut labore et dolore magna...</p>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="content content--variant-facilities">
-                        <img class="icon icon--variant-big" src="./assets/icons/clock.svg" />
-                        <p class="text text--background text--color-background" src="./assets/icons/team-back.svg">02
-                        </p>
-                        <p class="text text--title-2">Quit Hours</p>
-                        <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
-                    </div>
+                <div class="swiper-slide facilities-card">
+                    <img class="icon icon--variant-big" src="./assets/icons/clock.svg" />
+                    <p class="background-text text--color-grey-1" src="./assets/icons/team-back.svg">02
+                    </p>
+                    <p class="title-3">Quit Hours</p>
+                    <p class="paragraph-1 text--color-grey-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed
+                        do eiusmod tempor incididunt ut labore et dolore magna...</p>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="content content--variant-facilities">
-                        <img class="icon icon--variant-big" src="./assets/icons/location.svg" />
-                        <p class="text text--background text--color-background" src="./assets/icons/team-back.svg">03
-                        </p>
-                        <p class="text text--title-2">Best Locations</p>
-                        <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
-                    </div>
+                <div class="swiper-slide facilities-card">
+                    <img class="icon icon--variant-big" src="./assets/icons/location.svg" />
+                    <p class="background-text text--color-grey-1" src="./assets/icons/team-back.svg">03
+                    </p>
+                    <p class="title-3">Best Locations</p>
+                    <p class="paragraph-1 text--color-grey-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed
+                        do eiusmod tempor incididunt ut labore et dolore magna...</p>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="content content--variant-facilities">
-                        <img class="icon icon--variant-big" src="./assets/icons/clock-alt.svg" />
-                        <p class="text text--background text--color-background" src="./assets/icons/team-back.svg">04
-                        </p>
-                        <p class="text text--title-2">Free Cancelation</p>
-                        <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
-                    </div>
+                <div class="swiper-slide facilities-card">
+                    <img class="icon icon--variant-big" src="./assets/icons/clock-alt.svg" />
+                    <p class="background-text text--color-grey-1" src="./assets/icons/team-back.svg">04
+                    </p>
+                    <p class="title-3">Free Cancelation</p>
+                    <p class="paragraph-1 text--color-grey-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed
+                        do eiusmod tempor incididunt ut labore et dolore magna...</p>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="content content--variant-facilities">
-                        <img class="icon icon--variant-big" src="./assets/icons/credit-card.svg" />
-                        <p class="text text--background text--color-background" src="./assets/icons/team-back.svg">05
-                        </p>
-                        <p class="text text--title-2">Payment Options</p>
-                        <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
-                    </div>
+                <div class="swiper-slide facilities-card">
+                    <img class="icon icon--variant-big" src="./assets/icons/credit-card.svg" />
+                    <p class="background-text text--color-grey-1" src="./assets/icons/team-back.svg">05
+                    </p>
+                    <p class="title-3">Payment Options</p>
+                    <p class="paragraph-1 text--color-grey-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed
+                        do eiusmod tempor incididunt ut labore et dolore magna...</p>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="content content--variant-facilities">
-                        <img class="icon icon--variant-big" src="./assets/icons/discount.svg" />
-                        <p class="text text--background text--color-background" src="./assets/icons/team-back.svg">06
-                        </p>
-                        <p class="text text--title-2">Special Offers</p>
-                        <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
-                    </div>
+                <div class="swiper-slide facilities-card">
+                    <img class="icon icon--variant-big" src="./assets/icons/discount.svg" />
+                    <p class="background-text text--color-grey-1" src="./assets/icons/team-back.svg">06
+                    </p>
+                    <p class="title-3">Special Offers</p>
+                    <p class="paragraph-1 text--color-grey-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed
+                        do eiusmod tempor incididunt ut labore et dolore magna...</p>
                 </div>
             </div>
 
@@ -325,28 +321,93 @@
                     delay: 4000,
                     disableOnInteraction: false,
                 },
-
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true
                 }
             });
         </script>
+
+        <div class="hidden--mobile">
+            <div class="row">
+                <div class="column">
+                    <div class="facilities-card">
+                        <img class="icon icon--variant-big" src="./assets/icons/rate.svg" />
+                        <p class="background-text text--color-grey-1" src="./assets/icons/team-back.svg">01
+                        </p>
+                        <p class="title-3 text--color-grey-5">Have High Rating</p>
+                        <p class="paragraph-1 text--color-grey-5">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing
+                            elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                    <div class="facilities-card">
+                        <img class="icon icon--variant-big" src="./assets/icons/clock-alt.svg" />
+                        <p class="background-text text--color-grey-1" src="./assets/icons/team-back.svg">04
+                        </p>
+                        <p class="title-3 text--color-grey-5">Free Cancelation</p>
+                        <p class="paragraph-1 text--color-grey-5">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="facilities-card">
+                        <img class="icon icon--variant-big" src="./assets/icons/clock.svg" />
+                        <p class="background-text text--color-grey-1" src="./assets/icons/team-back.svg">02
+                        </p>
+                        <p class="title-3 text--color-grey-5">Quit Hours</p>
+                        <p class="paragraph-1 text--color-grey-5">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                    <div class="facilities-card">
+                        <img class="icon icon--variant-big" src="./assets/icons/credit-card.svg" />
+                        <p class="background-text text--color-grey-1" src="./assets/icons/team-back.svg">05
+                        </p>
+                        <p class="title-3 text--color-grey-5">Payment Options</p>
+                        <p class="paragraph-1 text--color-grey-5">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="facilities-card">
+                        <img class="icon icon--variant-big" src="./assets/icons/location.svg" />
+                        <p class="background-text text--color-grey-1" src="./assets/icons/team-back.svg">03
+                        </p>
+                        <p class="title-3 text--color-grey-5">Best Locations</p>
+                        <p class="paragraph-1 text--color-grey-5">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                    <div class="facilities-card">
+                        <img class="icon icon--variant-big" src="./assets/icons/discount.svg" />
+                        <p class="background-text text--color-grey-1" src="./assets/icons/team-back.svg">06
+                        </p>
+                        <p class="title-3 text--color-grey-5">Special Offers</p>
+                        <p class="paragraph-1 text--color-grey-5">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <p class="text text--title-up text--color-3">MENU</p>
-        <p class="text text--title-1">Our Foods Menu</p>
+    <section class="food">
+        <p class="title-up text--color-grey-3">MENU</p>
+        <p class="title-2">Our Foods Menu</p>
         <div class="swiper food-swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide card card--wide">
-                    <div class="content">
+                <div class="swiper-slide row">
+                    <div class="column">
                         <div class="entry">
                             <div class="img">
                                 <img src="./assets/img/eggs.jpg" />
                             </div>
                             <div class="data">
-                                <p class="text text--title-3">Eggs & Bacon</p>
+                                <p class="title-4">Eggs & Bacon</p>
                                 <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
                                     isicing elit, sed do eiusmod tempor. </p>
                             </div>
@@ -356,7 +417,7 @@
                                 <img src="./assets/img/tea.jpg" />
                             </div>
                             <div class="data">
-                                <p class="text text--title-3">Tea or Coffee</p>
+                                <p class="title-4">Tea or Coffee</p>
                                 <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
                                     isicing elit, sed do eiusmod tempor. </p>
                             </div>
@@ -366,21 +427,53 @@
                                 <img src="./assets/img/chia.jpg" />
                             </div>
                             <div class="data">
-                                <p class="text text--title-3">Chia Oatmeal</p>
+                                <p class="title-4">Chia Oatmeal</p>
+                                <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
+                                    isicing elit, sed do eiusmod tempor. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column hidden--mobile">
+                        <div class="entry">
+                            <div class="img">
+                                <img src="./assets/img/eggs.jpg" />
+                            </div>
+                            <div class="data">
+                                <p class="title-4">Bacon & Eggs</p>
+                                <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
+                                    isicing elit, sed do eiusmod tempor. </p>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="img">
+                                <img src="./assets/img/tea.jpg" />
+                            </div>
+                            <div class="data">
+                                <p class="title-4">Coffee or Tea</p>
+                                <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
+                                    isicing elit, sed do eiusmod tempor. </p>
+                            </div>
+                        </div>
+                        <div class="entry entry--margin-bottom">
+                            <div class="img">
+                                <img src="./assets/img/chia.jpg" />
+                            </div>
+                            <div class="data">
+                                <p class="title-4">Oatmeal Chia</p>
                                 <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
                                     isicing elit, sed do eiusmod tempor. </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide card card--wide">
-                    <div class="content">
+                <div class="swiper-slide row">
+                    <div class="column">
                         <div class="entry">
                             <div class="img">
                                 <img src="./assets/img/eggs.jpg" />
                             </div>
                             <div class="data">
-                                <p class="text text--title-3">Bacon & Eggs</p>
+                                <p class="title-4">Eggs & Bacon</p>
                                 <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
                                     isicing elit, sed do eiusmod tempor. </p>
                             </div>
@@ -390,7 +483,7 @@
                                 <img src="./assets/img/tea.jpg" />
                             </div>
                             <div class="data">
-                                <p class="text text--title-3">Coffee or Tea</p>
+                                <p class="title-4">Tea or Coffee</p>
                                 <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
                                     isicing elit, sed do eiusmod tempor. </p>
                             </div>
@@ -400,7 +493,39 @@
                                 <img src="./assets/img/chia.jpg" />
                             </div>
                             <div class="data">
-                                <p class="text text--title-3">Oatmeal Chia</p>
+                                <p class="title-4">Chia Oatmeal</p>
+                                <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
+                                    isicing elit, sed do eiusmod tempor. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column hidden--mobile">
+                        <div class="entry">
+                            <div class="img">
+                                <img src="./assets/img/eggs.jpg" />
+                            </div>
+                            <div class="data">
+                                <p class="title-4">Bacon & Eggs</p>
+                                <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
+                                    isicing elit, sed do eiusmod tempor. </p>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <div class="img">
+                                <img src="./assets/img/tea.jpg" />
+                            </div>
+                            <div class="data">
+                                <p class="title-4">Coffee or Tea</p>
+                                <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
+                                    isicing elit, sed do eiusmod tempor. </p>
+                            </div>
+                        </div>
+                        <div class="entry entry--margin-bottom">
+                            <div class="img">
+                                <img src="./assets/img/chia.jpg" />
+                            </div>
+                            <div class="data">
+                                <p class="title-4">Oatmeal Chia</p>
                                 <p class="text text--paragraph-1">Lorem ipsum dolor sit amet, consectetur adip
                                     isicing elit, sed do eiusmod tempor. </p>
                             </div>
@@ -440,27 +565,26 @@
         </script>
     </section>
 
-    <section>
-        <div class="swiper lonely-swiper no-margin">
+    <section class="lonely">
+        <div class="swiper lonely-swiper hidden--desktop">
             <div class="swiper-wrapper">
-                <div class="swiper-slide card">
-                    <div class="lonely">
+                <div class="swiper-slide">
+                    <div class="lonely-img">
                         <img src="./assets/img/lonely1.jpg" />
                     </div>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="lonely">
+                <div class="swiper-slide">
+                    <div class="lonely-img">
                         <img src="./assets/img/lonely2.jpg" />
                     </div>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="lonely">
+                <div class="swiper-slide">
+                    <div class="lonely-img">
                         <img src="./assets/img/lonely3.jpeg" />
                     </div>
                 </div>
 
             </div>
-
             <div class="swiper-pagination"></div>
         </div>
 
@@ -480,32 +604,44 @@
                 }
             });
         </script>
+        
+        <div class="hidden--mobile even-row">
+            <div class="lonely-img">
+                <img src="./assets/img/lonely1.jpg" />
+            </div>
+            <div class="lonely-img">
+                <img src="./assets/img/lonely2.jpg" />
+            </div>
+            <div class="lonely-img">
+                <img src="./assets/img/lonely3.jpeg" />
+            </div>
+        </div>
     </section>
 
     <section class="achievements">
-        <div class="card card--center">
+        <div class="center-col">
             <img src="./assets/icons/rocket.svg" />
-            <p class="text text--title-4 text--align-center text--color-1">84k<span>+</span></p>
-            <p class="text text--paragraph-2 text--align-center text--color-3">Projects are Completed</p>
+            <p class="title-5 text--align-center text--color-white">84k<span>+</span></p>
+            <p class="paragraph-2 text--align-center text--color-grey-3">Projects are Completed</p>
         </div>
-        <div class="card card--center">
+        <div class="center-col">
             <img src="./assets/icons/team-alt.svg" />
-            <p class="text text--title-4 text--align-center text--color-1">10M<span>+</span></p>
-            <p class="text text--paragraph-2 text--align-center text--color-3">Projects are Completed</p>
+            <p class="title-5 text--align-center text--color-white">10M<span>+</span></p>
+            <p class="paragraph-2 text--align-center text--color-grey-3">Projects are Completed</p>
         </div>
-        <div class="card card--center">
+        <div class="center-col">
             <img src="./assets/icons/earn.svg" />
-            <p class="text text--title-4 text--align-center text--color-1">02k<span>+</span></p>
-            <p class="text text--paragraph-2 text--align-center text--color-3">Projects are Completed</p>
+            <p class="title-5 text--align-center text--color-white">02k<span>+</span></p>
+            <p class="paragraph-2 text--align-center text--color-grey-3">Projects are Completed</p>
         </div>
-        <div class="card card--center">
+        <div class="center-col">
             <img src="./assets/icons/book.svg" />
-            <p class="text text--title-4 text--align-center text--color-1">100M<span>+</span></p>
-            <p class="text text--paragraph-2 text--align-center text--color-3">Projects are Completed</p>
+            <p class="title-5 text--align-center text--color-white">100M<span>+</span></p>
+            <p class="paragraph-2 text--align-center text--color-grey-3">Projects are Completed</p>
         </div>
     </section>
 
-    <footer>
+    <footer class="no-bottom">
         <div class="main-footer">
             <div class="footer-section">
                 <div class="logo logo--size-big">
@@ -515,7 +651,7 @@
                         <p>MIRANDA</p>
                     </div>
                 </div>
-                <p class="text text--paragraph-1 text--color-3">Lorem ipsum dolor sit amet, consect etur adipisicing
+                <p class="paragraph-1 text--color-grey-3">Lorem ipsum dolor sit amet, consect etur adipisicing
                     elit,
                     sed
                     doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -535,26 +671,26 @@
                 </div>
             </div>
             <div class="footer-section">
-                <p class="text text--title-3">Services.</p>
+                <p class="title-4 text--color-grey-5">Services.</p>
                 <div class="row">
                     <div class="column">
-                        <p class="text text--paragraph-1 text--color-3">+ Resturent & Bar</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Swimming Pool</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Wellness & Spa</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Restaurant</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Conference Room</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Coctail Party House</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Resturent & Bar</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Swimming Pool</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Wellness & Spa</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Restaurant</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Conference Room</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Coctail Party House</p>
                     </div>
                     <div class="column">
-                        <p class="text text--paragraph-1 text--color-3">+ Gaming Zone</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Marriage Party</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Party Planning</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Tour Consultancy</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Gaming Zone</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Marriage Party</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Party Planning</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Tour Consultancy</p>
                     </div>
                 </div>
             </div>
             <div class="footer-section">
-                <p class="text text--title-3">Contact Us.</p>
+                <p class="title-4">Contact Us</p>
                 <div>
                     <div class="swiper-slide card card--wide">
                         <div class="content content--height-full">
@@ -563,8 +699,8 @@
                                     <img class="icon icon--variant-medium" src="./assets/icons/phone.svg" />
                                 </div>
                                 <div class="data">
-                                    <p class="text text--title-3">Phone Number</p>
-                                    <p class="text text--paragraph-1 text--color-3">+34 644 255 923</p>
+                                    <p class="title-4 text--color-grey-5">Phone Number</p>
+                                    <p class="paragraph-1 text--color-grey-3">+34 644 255 923</p>
                                 </div>
                             </div>
                             <div class="entry">
@@ -573,8 +709,8 @@
                                         src="./assets/icons/mail.svg" />
                                 </div>
                                 <div class="data">
-                                    <p class="text text--title-3">Email</p>
-                                    <p class="text text--paragraph-1 text--color-3">szymonekokot@gmail.com</p>
+                                    <p class="title-4 text--color-grey-5">Email</p>
+                                    <p class="paragraph-1 text--color-grey-3">szymonekokot@gmail.com</p>
                                 </div>
                             </div>
                             <div class="entry">
@@ -582,8 +718,8 @@
                                     <img class="icon icon--variant-medium" src="./assets/icons/location-alt.svg" />
                                 </div>
                                 <div class="data">
-                                    <p class="text text--title-3">Hotel Address</p>
-                                    <p class="text text--paragraph-1 text--color-3">OXYGEN Workspace | Calle Princesa
+                                    <p class="title-4 text--color-grey-5">Hotel Address</p>
+                                    <p class="paragraph-1 text--color-grey-3">OXYGEN Workspace | Calle Princesa
                                         31,
                                         planta 2 28008 Madrid</p>
                                 </div>
@@ -593,9 +729,9 @@
                 </div>
             </div>
         </div>
-        <div class="foots-footer">
-            <p class="text text--paragraph-2">Copyright By@Example - 2020</p>
-            <p class="text text--paragraph-2">Terms of use | Privacy Environmental Policy</p>
-        </div>
     </footer>
+    <div class="foots-footer">
+        <p class="paragraph-2 text--color-grey-5">Copyright By@Example - 2020</p>
+        <p class="paragraph-2 text--color-grey-5">Terms of use | Privacy Environmental Policy</p>
+    </div>
 </body>
