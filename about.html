@@ -11,8 +11,8 @@
 <body>
     <header>
         <div class="header">
-            <div>
-                <button class="button toggler">
+            <div class="left-div">
+                <button class="button toggler hidden--desktop">
                     <img class="icon" src="./assets/icons/bars.svg" />
                 </button>
                 <div class="logo logo--size-small">
@@ -23,11 +23,11 @@
                     </div>
                 </div>
             </div>
-            <div class="menu-alt">
-                <a class="text text--link text--paragraph-2" href="./about.html">About Us</a>
-                <a class="text text--link text--paragraph-2" href="./rooms.html">Rooms</a>
-                <a class="text text--link text--paragraph-2" href="./offers.html">Offers</a>
-                <a class="text text--link text--paragraph-2" href="./contact.html">Contact</a>
+            <div class="hidden--mobile menu-alt">
+                <a class="link paragraph-2 text--color-grey5" href="./about.html">About Us</a>
+                <a class="link paragraph-2 text--color-grey5" href="./rooms.html">Rooms</a>
+                <a class="link paragraph-2 text--color-grey5" href="./offers.html">Offers</a>
+                <a class="link paragraph-2 text--color-grey5" href="./contact.html">Contact</a>
             </div>
             <div>
                 <button class="button">
@@ -39,21 +39,21 @@
             </div>
         </div>
         <div class="menu hidden">
-            <a class="text text--link text--paragraph-2" href="./about.html">About Us</a>
-            <a class="text text--link text--paragraph-2" href="./rooms.html">Rooms</a>
-            <a class="text text--link text--paragraph-2" href="./offers.html">Offers</a>
-            <a class="text text--link text--paragraph-2" href="./contact.html">Contact</a>
+            <a class="link paragraph-2 text--color-grey5" href="./about.html">About Us</a>
+            <a class="link paragraph-2 text--color-grey5" href="./rooms.html">Rooms</a>
+            <a class="link paragraph-2 text--color-grey5" href="./offers.html">Offers</a>
+            <a class="link paragraph-2 text--color-grey5" href="./contact.html">Contact</a>
         </div>
         <script src="./js/menu-toggler.js"></script>
     </header>
 
     <section class="home">
-        <p class="text text--color-1 text--title-up">THE ULTIMATE LUXURY EXPERIENCE</p>
-        <p class="text text--title-1 text--color-1">About Us</p>
+        <p class="title-up text--color-white">THE ULTIMATE LUXURY EXPERIENCE</p>
+        <p class="title-1">About Us</p>
         <div class="path">
-            <a class="text text--paragraph-2 text--link" href="./index.html">Home</a>
-            <p class="text text--paragraph-2 text--link"> | </p>
-            <p class="text text--paragraph-2 text--color-5">About</p>
+            <a class="paragraph-2 link" href="./index.html">Home</a>
+            <p class="paragraph-2 link"> | </p>
+            <p class="paragraph-2 text--color-grey-5">About</p>
         </div>
     </section>
 
@@ -65,44 +65,43 @@
             <img class="play" src="./assets/icons/play.svg" />
             <script src="./js/video.js"></script>
         </div>
-        <p class="text text--title-2 text--align-center">Hello. Our hotel has been present for over 20 years. We make
+        <p class="title-2 text--align-center text--color-grey-5">Hello. Our hotel has been present for over 20 years. We
+            make
             the best for all our customers.</p>
     </section>
 
-    <section class="no-bottom">
-        <div class="row">
-            <div class="column">
-                <div class="card card--center card--square">
-                    <img class="icon icon--variant-big" src="./assets/icons/breakfast.svg" />
-                    <p class="text text--paragraph-2 text--align-center">BREAKFAST</p>
-                </div>
-                <div class="card card--center card--square">
-                    <img class="icon icon--variant-big" src="./assets/icons/map-alt.svg" />
-                    <p class="text text--paragraph-2 text--align-center">CITY GUIDE</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card card--center card--square card--square-gold">
-                    <img class="icon icon--variant-big" src="./assets/icons/plane.svg" />
-                    <p class="text text--paragraph-2 text--align-center">AIRPORT PICKUP</p>
-                </div>
-                <div class="card card--center card--square">
-                    <img class="icon icon--variant-big" src="./assets/icons/room.svg" />
-                    <p class="text text--paragraph-2 text--align-center">LUXURY ROOM</p>
-                </div>
-            </div>
+    <section class="services no-bottom">
+        <div class="services-item">
+            <img class="icon icon--variant-big" src="./assets/icons/breakfast.svg" />
+            <p class="paragraph-2 text--align-center">BREAKFAST</p>
+        </div>
+        <div class="services-item services-item-gold">
+            <img class="icon icon--variant-big" src="./assets/icons/plane.svg" />
+            <p class="paragraph-2 text--align-center">AIRPORT PICKUP</p>
+        </div>
+        <div class="services-item">
+            <img class="icon icon--variant-big" src="./assets/icons/map-alt.svg" />
+            <p class="paragraph-2 text--align-center">CITY GUIDE</p>
+        </div>
+        <div class="services-item hidden--mobile">
+            <img class="icon icon--variant-big" src="./assets/icons/bbq.svg" />
+            <p class="paragraph-2 text--align-center">BBQ PARTY</p>
+        </div>
+        <div class="services-item">
+            <img class="icon icon--variant-big" src="./assets/icons/room.svg" />
+            <p class="paragraph-2 text--align-center">LUXURY ROOM</p>
         </div>
     </section>
 
-    <section>
-        <div class="card card--wide">
-            <div class="image">
+    <section class="restaurant">
+        <div class="res-card">
+            <div class="res-image">
                 <img src="./assets/empty.png" />
             </div>
-            <div class="content content--align-start">
-                <p class="text text--title-up text--color-3">Restaurant</p>
-                <p class="text text--title-1">Get Restaurant Facilities & Many Other More</p>
-                <p class="text text--paragraph-1 text--color-3">Lorem ipsum dolor sit amet, consectetur adipisicing
+            <div class="res-content">
+                <p class="title-up text--color-grey-3">Restaurant</p>
+                <p class="title-2 text--color-grey-5">Get Restaurant Facilities & Many Other More</p>
+                <p class="paragraph-1 text--color-grey-3">Lorem ipsum dolor sit amet, consectetur adipisicing
                     elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
                 <button class="button button--variant-gold">TAKE A TOUR</button>
@@ -110,71 +109,59 @@
         </div>
     </section>
 
-    <section class="background-black">
-        <p class="text text--title-up text--color-1 text--align-center">FACILITIES</p>
-        <p class="text text--title-1 text--align-center text--color-1">Core Features</p>
+    <section class="facilities-dark">
+        <p class="title-up text--color-white text--align-center">FACILITIES</p>
+        <p class="title-2 text--align-center text--color-white">Core Features</p>
 
-        <div class="swiper features-swiper no-margin">
+        <div class="swiper features-swiper no-margin hidden--desktop">
             <div class="swiper-wrapper">
-                <div class="swiper-slide card">
-                    <div class="content content--variant-facilities content--background-black">
-                        <img class="icon icon--variant-big" src="./assets/icons/rate.svg" />
-                        <p class="text text--background" src="./assets/icons/team-back.svg">01</p>
-                        <p class="text text--title-2 text--color-1">Have High Rating</p>
-                        <p class="text text--paragraph-1 text--color-1">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
-                    </div>
+                <div class="swiper-slide facilities-card">
+                    <img class="icon icon--variant-big" src="./assets/icons/rate.svg" />
+                    <p class="background-text text--color-grey-5">01</p>
+                    <p class="title-3 text--color-white">Have High Rating</p>
+                    <p class="paragraph-1 text--color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed
+                        do eiusmod tempor incididunt ut labore et dolore magna...</p>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="content content--variant-facilities content--background-black">
-                        <img class="icon icon--variant-big" src="./assets/icons/clock.svg" />
-                        <p class="text text--background" src="./assets/icons/team-back.svg">02</p>
-                        <p class="text text--title-2 text--color-1">Quit Hours</p>
-                        <p class="text text--paragraph-1 text--color-1">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
-                    </div>
+                <div class="swiper-slide facilities-card">
+                    <img class="icon icon--variant-big" src="./assets/icons/clock.svg" />
+                    <p class="background-text text--color-grey-5">02</p>
+                    <p class="title-3 text--color-white">Quit Hours</p>
+                    <p class="paragraph-1 text--color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed
+                        do eiusmod tempor incididunt ut labore et dolore magna...</p>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="content content--variant-facilities content--background-black">
-                        <img class="icon icon--variant-big" src="./assets/icons/location.svg" />
-                        <p class="text text--background" src="./assets/icons/team-back.svg">03</p>
-                        <p class="text text--title-2 text--color-1">Best Locations</p>
-                        <p class="text text--paragraph-1 text--color-1">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
-                    </div>
+                <div class="swiper-slide facilities-card">
+                    <img class="icon icon--variant-big" src="./assets/icons/location.svg" />
+                    <p class="background-text text--color-grey-5">03</p>
+                    <p class="title-3 text--color-white">Best Locations</p>
+                    <p class="paragraph-1 text--color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed
+                        do eiusmod tempor incididunt ut labore et dolore magna...</p>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="content content--variant-facilities content--background-black">
-                        <img class="icon icon--variant-big" src="./assets/icons/clock-alt.svg" />
-                        <p class="text text--background" src="./assets/icons/team-back.svg">04</p>
-                        <p class="text text--title-2 text--color-1">Free Cancelation</p>
-                        <p class="text text--paragraph-1 text--color-1">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
-                    </div>
+                <div class="swiper-slide facilities-card">
+                    <img class="icon icon--variant-big" src="./assets/icons/clock-alt.svg" />
+                    <p class="background-text text--color-grey-5">04</p>
+                    <p class="title-3 text--color-white">Free Cancelation</p>
+                    <p class="paragraph-1 text--color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed
+                        do eiusmod tempor incididunt ut labore et dolore magna...</p>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="content content--variant-facilities content--background-black">
-                        <img class="icon icon--variant-big" src="./assets/icons/credit-card.svg" />
-                        <p class="text text--background" src="./assets/icons/team-back.svg">05</p>
-                        <p class="text text--title-2 text--color-1">Payment Options</p>
-                        <p class="text text--paragraph-1 text--color-1">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
-                    </div>
+                <div class="swiper-slide facilities-card">
+                    <img class="icon icon--variant-big" src="./assets/icons/credit-card.svg" />
+                    <p class="background-text text--color-grey-5">05</p>
+                    <p class="title-3 text--color-white">Payment Options</p>
+                    <p class="paragraph-1 text--color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed
+                        do eiusmod tempor incididunt ut labore et dolore magna...</p>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="content content--variant-facilities content--background-black">
-                        <img class="icon icon--variant-big" src="./assets/icons/discount.svg" />
-                        <p class="text text--background" src="./assets/icons/team-back.svg">06</p>
-                        <p class="text text--title-2 text--color-1">Special Offers</p>
-                        <p class="text text--paragraph-1 text--color-1">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
-                    </div>
+                <div class="swiper-slide facilities-card">
+                    <img class="icon icon--variant-big" src="./assets/icons/discount.svg" />
+                    <p class="background-text text--color-grey-5">06</p>
+                    <p class="title-3 text--color-white">Special Offers</p>
+                    <p class="paragraph-1 text--color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed
+                        do eiusmod tempor incididunt ut labore et dolore magna...</p>
                 </div>
             </div>
 
@@ -190,81 +177,137 @@
                     delay: 4000,
                     disableOnInteraction: false,
                 },
-
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true
                 }
             });
         </script>
-    </section>
 
-    <section class="no-bottom">
-        <p class="text text--title-up text--color-3">COUNTER</p>
-        <p class="text text--title-1">Some Fun Facts</p>
-        <div class="card">
-            <div class="content">
-                <div class="entry">
-                    <div class="img">
-                        <img src="./assets/icons/comment.svg" alt="">
+        <div class="hidden--mobile">
+            <div class="row row--gap-1">
+                <div class="column column--gap-1">
+                    <div class="facilities-card">
+                        <img class="icon icon--variant-big" src="./assets/icons/rate.svg" />
+                        <p class="background-text text--color-grey-5">01</p>
+                        <p class="title-3 text--color-white">Have High Rating</p>
+                        <p class="paragraph-1 text--color-white">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing
+                            elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
                     </div>
-                    <div class="data">
-                        <p class="text text--title-1">8000</p>
-                        <p class="text text--paragraph-1">Happy Users</p>
-                    </div>
-                    <div class="icon">
-                        <img src="./assets/icons/arrow-long.svg" alt="">
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="img">
-                        <img src="./assets/icons/rate-alt.svg" alt="">
-                    </div>
-                    <div class="data">
-                        <p class="text text--title-1">10M</p>
-                        <p class="text text--paragraph-1">Reviews & Appriciate</p>
-                    </div>
-                    <div class="icon">
-                        <img src="./assets/icons/arrow-long.svg" alt="">
+                    <div class="facilities-card">
+                        <img class="icon icon--variant-big" src="./assets/icons/clock-alt.svg" />
+                        <p class="background-text text--color-grey-5">04</p>
+                        <p class="title-3 text--color-white">Free Cancelation</p>
+                        <p class="paragraph-1 text--color-white">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
                     </div>
                 </div>
-                <div class="entry">
-                    <div class="img">
-                        <img src="./assets/icons/globe.svg" alt="">
+                <div class="column column--gap-1">
+                    <div class="facilities-card">
+                        <img class="icon icon--variant-big" src="./assets/icons/clock.svg" />
+                        <p class="background-text text--color-grey-5">02</p>
+                        <p class="title-3 text--color-white">Quit Hours</p>
+                        <p class="paragraph-1 text--color-white">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
                     </div>
-                    <div class="data">
-                        <p class="text text--title-1">100</p>
-                        <p class="text text--paragraph-1">Country Coverage</p>
+                    <div class="facilities-card">
+                        <img class="icon icon--variant-big" src="./assets/icons/credit-card.svg" />
+                        <p class="background-text text--color-grey-5">05</p>
+                        <p class="title-3 text--color-white">Payment Options</p>
+                        <p class="paragraph-1 text--color-white">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
                     </div>
-                    <div class="icon">
-                        <img src="./assets/icons/arrow-long.svg" alt="">
+                </div>
+                <div class="column column--gap-1">
+                    <div class="facilities-card">
+                        <img class="icon icon--variant-big" src="./assets/icons/location.svg" />
+                        <p class="background-text text--color-grey-5">03</p>
+                        <p class="title-3 text--color-white">Best Locations</p>
+                        <p class="paragraph-1 text--color-white">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                    </div>
+                    <div class="facilities-card">
+                        <img class="icon icon--variant-big" src="./assets/icons/discount.svg" />
+                        <p class="background-text text--color-grey-5">06</p>
+                        <p class="title-3 text--color-white">Special Offers</p>
+                        <p class="paragraph-1 text--color-white">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna...</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="swiper lonely-swiper no-margin">
+    <section class="counter">
+        <p class="title-up text--color-grey-3">COUNTER</p>
+        <p class="title-2 text--color-grey-5">Some Fun Facts</p>
+        <div class="counter-card">
+            <div class="entry">
+                <div class="img">
+                    <img src="./assets/icons/comment.svg" alt="">
+                </div>
+                <div class="data">
+                    <p class="title-2 text--color-grey-5">8000</p>
+                    <p class="paragraph-1 text--color-grey-5">Happy Users</p>
+                </div>
+                <div class="icon">
+                    <img src="./assets/icons/arrow-long.svg" alt="">
+                </div>
+            </div>
+            <div class="entry">
+                <div class="img">
+                    <img src="./assets/icons/rate-alt.svg" alt="">
+                </div>
+                <div class="data">
+                    <p class="title-2 text--color-grey-5">10M</p>
+                    <p class="paragraph-1 text--color-grey-5">Reviews & Appriciate</p>
+                </div>
+                <div class="icon">
+                    <img src="./assets/icons/arrow-long.svg" alt="">
+                </div>
+            </div>
+            <div class="entry">
+                <div class="img">
+                    <img src="./assets/icons/globe.svg" alt="">
+                </div>
+                <div class="data">
+                    <p class="title-2 text--color-grey-5">100</p>
+                    <p class="paragraph-1 text--color-grey-5">Country Coverage</p>
+                </div>
+                <div class="icon">
+                    <img src="./assets/icons/arrow-long.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lonely">
+        <div class="swiper lonely-swiper hidden--desktop">
             <div class="swiper-wrapper">
-                <div class="swiper-slide card">
-                    <div class="lonely">
-                        <img src="./assets/empty.png" />
+                <div class="swiper-slide">
+                    <div class="lonely-img">
+                        <img src="./assets/img/lonely1.jpg" />
                     </div>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="lonely">
-                        <img src="./assets/empty.png" />
+                <div class="swiper-slide">
+                    <div class="lonely-img">
+                        <img src="./assets/img/lonely2.jpg" />
                     </div>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="lonely">
-                        <img src="./assets/empty.png" />
+                <div class="swiper-slide">
+                    <div class="lonely-img">
+                        <img src="./assets/img/lonely3.jpeg" />
                     </div>
                 </div>
 
             </div>
-
             <div class="swiper-pagination"></div>
         </div>
 
@@ -284,10 +327,22 @@
                 }
             });
         </script>
+
+        <div class="hidden--mobile even-row">
+            <div class="lonely-img">
+                <img src="./assets/img/lonely1.jpg" />
+            </div>
+            <div class="lonely-img">
+                <img src="./assets/img/lonely2.jpg" />
+            </div>
+            <div class="lonely-img">
+                <img src="./assets/img/lonely3.jpeg" />
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <div>
+    <footer class="no-bottom">
+        <div class="main-footer">
             <div class="footer-section">
                 <div class="logo logo--size-big">
                     <img src="./assets/icons/logo-alt.svg" />
@@ -296,7 +351,7 @@
                         <p>MIRANDA</p>
                     </div>
                 </div>
-                <p class="text text--paragraph-1 text--color-3">Lorem ipsum dolor sit amet, consect etur adipisicing
+                <p class="paragraph-1 text--color-grey-3">Lorem ipsum dolor sit amet, consect etur adipisicing
                     elit,
                     sed
                     doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -316,36 +371,36 @@
                 </div>
             </div>
             <div class="footer-section">
-                <p class="text text--title-3">Services.</p>
+                <p class="title-4 text--color-grey-5">Services.</p>
                 <div class="row">
                     <div class="column">
-                        <p class="text text--paragraph-1 text--color-3">+ Resturent & Bar</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Swimming Pool</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Wellness & Spa</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Restaurant</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Conference Room</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Coctail Party House</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Resturent & Bar</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Swimming Pool</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Wellness & Spa</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Restaurant</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Conference Room</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Coctail Party House</p>
                     </div>
                     <div class="column">
-                        <p class="text text--paragraph-1 text--color-3">+ Gaming Zone</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Marriage Party</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Party Planning</p>
-                        <p class="text text--paragraph-1 text--color-3">+ Tour Consultancy</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Gaming Zone</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Marriage Party</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Party Planning</p>
+                        <p class="paragraph-1 text--color-grey-3">+ Tour Consultancy</p>
                     </div>
                 </div>
             </div>
             <div class="footer-section">
-                <p class="text text--title-3">Contact Us.</p>
+                <p class="title-4">Contact Us</p>
                 <div>
-                    <div class="card ">
-                        <div class="content">
+                    <div class="swiper-slide card card--wide">
+                        <div class="content content--height-full">
                             <div class="entry">
                                 <div class="">
                                     <img class="icon icon--variant-medium" src="./assets/icons/phone.svg" />
                                 </div>
                                 <div class="data">
-                                    <p class="text text--title-3">Phone Number</p>
-                                    <p class="text text--paragraph-1 text--color-3">+34 644 255 923</p>
+                                    <p class="title-4 text--color-grey-5">Phone Number</p>
+                                    <p class="paragraph-1 text--color-grey-3">+34 644 255 923</p>
                                 </div>
                             </div>
                             <div class="entry">
@@ -354,8 +409,8 @@
                                         src="./assets/icons/mail.svg" />
                                 </div>
                                 <div class="data">
-                                    <p class="text text--title-3">Email</p>
-                                    <p class="text text--paragraph-1 text--color-3">szymonekokot@gmail.com</p>
+                                    <p class="title-4 text--color-grey-5">Email</p>
+                                    <p class="paragraph-1 text--color-grey-3">szymonekokot@gmail.com</p>
                                 </div>
                             </div>
                             <div class="entry">
@@ -363,8 +418,8 @@
                                     <img class="icon icon--variant-medium" src="./assets/icons/location-alt.svg" />
                                 </div>
                                 <div class="data">
-                                    <p class="text text--title-3">Hotel Address</p>
-                                    <p class="text text--paragraph-1 text--color-3">OXYGEN Workspace | Calle Princesa
+                                    <p class="title-4 text--color-grey-5">Hotel Address</p>
+                                    <p class="paragraph-1 text--color-grey-3">OXYGEN Workspace | Calle Princesa
                                         31,
                                         planta 2 28008 Madrid</p>
                                 </div>
@@ -374,9 +429,9 @@
                 </div>
             </div>
         </div>
-        <div class="foots-footer">
-            <p class="text text--paragraph-2">Copyright By@Example - 2020</p>
-            <p class="text text--paragraph-2">Terms of use | Privacy Environmental Policy</p>
-        </div>
     </footer>
+    <div class="foots-footer">
+        <p class="paragraph-2 text--color-grey-5">Copyright By@Example - 2020</p>
+        <p class="paragraph-2 text--color-grey-5">Terms of use | Privacy Environmental Policy</p>
+    </div>
 </body>
