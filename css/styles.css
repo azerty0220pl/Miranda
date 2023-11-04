@@ -125,7 +125,10 @@ body {
 .text--size-5, .title-5, .title-2, .title-1 {
   font-size: 50px;
 }
-.text--size-6, .background-text {
+.text--size-6 {
+  font-size: 72px;
+}
+.text--size-7, .background-text {
   font-size: 120px;
 }
 .text--font-1, .title-4, .title-3, .title-2, .title-1 {
@@ -449,6 +452,8 @@ body {
 }
 .row .column {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 .row .column p {
   margin-top: 1.5rem;
@@ -456,10 +461,16 @@ body {
 .row .column p:first-of-type {
   margin-top: 0;
 }
+.row .column--gap-1 {
+  gap: 1rem;
+}
 .row--small {
   width: 60%;
   margin: auto;
   margin-bottom: 1rem;
+}
+.row--gap-1 {
+  gap: 1rem;
 }
 
 .swiper-button-prev-alt-2 {
@@ -625,6 +636,7 @@ body {
     font-size: 120px;
   }
   .title-2 {
+    font-size: 72px;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -771,7 +783,7 @@ header .menu {
 }
 
 @media only screen and (min-width: 1000px) {
-  .home div {
+  .home .buttons {
     display: flex;
     justify-content: start;
     gap: 2rem;
@@ -989,12 +1001,29 @@ footer.background-black {
   position: relative;
   display: block;
   width: 100%;
+  height: 100%;
   padding: 1rem;
   padding-bottom: 4rem;
   margin: 1rem;
   padding-top: 5rem;
 }
 .facilities .facilities-card p {
+  margin-top: 1rem;
+}
+.facilities-dark {
+  background-color: #222;
+}
+.facilities-dark .facilities-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  padding-bottom: 4rem;
+  padding-top: 5rem;
+  background-color: #333;
+}
+.facilities-dark .facilities-card p {
   margin-top: 1rem;
 }
 
@@ -1020,6 +1049,65 @@ footer.background-black {
 @media only screen and (min-width: 1000px) {
   .lonely-img {
     width: 33%;
+  }
+}
+.restaurant .res-card {
+  padding: 2rem;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+}
+.restaurant .res-card .res-image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  margin-bottom: 2rem;
+}
+.restaurant .res-card .res-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 1000px) {
+  .restaurant .res-card {
+    display: flex;
+    gap: 3rem;
+  }
+  .restaurant .res-card .res-image {
+    margin: 0;
+    width: 50%;
+  }
+}
+.services {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.services .services-item {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1;
+}
+.services .services-item-gold {
+  background-color: #BEAD8E;
+}
+.services .services-item-gold p {
+  color: #FCF9FF !important;
+}
+
+@media only screen and (min-width: 1000px) {
+  .services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .counter .counter-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
   }
 }
 
